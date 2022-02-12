@@ -606,11 +606,14 @@ export const MortgageNumByRegions = () => {
       />
       <input
         min={0}
-        max={3}
+        max={6}
         onChange={(e) => setCMI(+e.target.value)}
         type={"range"}
       />{" "}
       {monthes[currentMIdx]} 2021
+      <br />
+      <br />
+      <br />
     </>
   );
 };

@@ -17,6 +17,7 @@ import { SqMeterPrise } from "../components/sqMeterPrise/SqMeterPrise";
 import { MortgageNumByRegions } from "../components/mortgageumberByRegions/MortgageNumByRegions";
 import { KeyRate } from "../components/keyRate/KeyRate";
 import { BancBtCourt } from "../components/bancrouptByCourt/BancByCourt";
+import { BancrouptMap } from "../components/bancrouptMAP/BancrouptMap";
 
 const ViewHeader = () => (
   <div className="view-header">
@@ -45,14 +46,42 @@ export default function ChartsPage() {
           </CardBody>
         </Card>
         <div className="row">
-          <div className="col-12 col-md-12 mb-12">
+          <div className="col-12 col-md-6 mb-6">
             <AvarageInetersMortgageRate />
             {/*<AreaChartExample />*/}
           </div>
-          <div className="col-12 col-md-12 mb-12">
+          <div className="col-12 col-md-6 mb-6">
+            <p style={{ maxWidth: "400px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+              aspernatur assumenda autem culpa dicta labore laudantium repellat
+              ullam voluptatum. A aliquid commodi, dolorum facere facilis
+              laudantium obcaecati odio porro possimus.
+            </p>
+          </div>
+
+          <div className="col-12 col-md-6 mb-6">
+            <p style={{ maxWidth: "400px", float: "right", marginTop: "40px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+              aspernatur assumenda autem culpa dicta labore laudantium repellat
+              ullam voluptatum. A aliquid commodi, dolorum facere facilis
+              laudantium obcaecati odio porro possimus.
+            </p>
+          </div>
+          <div className="col-12 col-md-6 mb-6">
+            <BancrouptMap />
+          </div>
+
+          <div className="col-12 col-md-6 mb-6">
             <MortgageNumByRegions />
             {/*<AreaChartExample />*/}
           </div>
+
+          <p style={{ maxWidth: "400px" }}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+            aspernatur assumenda autem culpa dicta labore laudantium repellat
+            ullam voluptatum. A aliquid commodi, dolorum facere facilis
+            laudantium obcaecati odio porro possimus.
+          </p>
 
           <div className="col-12 col-md-12 mb-12">
             <MortgageToCitisents />
