@@ -1,0 +1,19 @@
+@import 'variables';
+
+.view {
+  .view-dashboard .sales-card {
+    .card + .card .card-body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid $md-blue-grey-50;
+      svg {
+        transform: translate(0, -2px);
+      }
+    }
+    .card + .card .card-body:last-child {
+      border: 0;
+    }
+  }
+}

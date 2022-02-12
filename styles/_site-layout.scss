@@ -1,0 +1,84 @@
+@import 'variables';
+
+// ===== APP LAYOUT CONTENT
+.app-wrapper {
+  display: block;
+  min-height: 100vh;
+}
+
+.content-container {
+  width: 100%;
+  transform: translate(0, 0);
+  position: relative;
+  @media (min-width: 992px) {
+    &.full {
+      width: calc(100% - 0.75em);
+      transform: translate(0.75em, 0);
+    }
+    //width: calc(100% - 15em);
+    //transform: translate(15em, 0);
+    // always hide on desktop
+    .menu-dropshadow {
+      display: none !important;
+    }
+  }
+  // show on only menu show + mobile view (for hiding navigation)
+  .menu-dropshadow {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: $zindex-dropdown-backdrop;
+  }
+}
+
+.site-head {
+  height: 62px;
+  background: $view-header-bg;
+  padding: 1.2rem;
+}
+
+.view {
+  .view-header,
+  .view-content {
+    padding: 1em 1.2rem;
+  }
+  .view-header {
+    background: $view-header-bg;
+    margin-top: -2px;
+    padding-bottom: 4.4rem;
+  }
+  .view-content {
+    margin-top: -4.2rem;
+  }
+  .view-header .breadcrumb-item + .breadcrumb-item::before {
+    color: #fff;
+  }
+  // for full pages like signin, 404 etc.
+  .view-content.view-pages {
+    padding: 4rem;
+    margin: 0;
+    min-height: 100vh;
+  }
+}
+@media (min-width: 768px) {
+  .site-head,
+  .view .view-header,
+  .view .view-content {
+    padding: 1.1em 2rem;
+  }
+  .view .view-header {
+    padding-bottom: 4.4rem;
+  }
+  .view-header header {
+    .title {
+      font-size: 1.45rem;
+    }
+    .subtitle {
+      font-size: $font-size-root;
+    }
+  }
+}

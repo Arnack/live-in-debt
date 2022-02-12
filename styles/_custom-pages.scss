@@ -1,0 +1,102 @@
+@import 'variables';
+
+.view-content.view-session,
+.view-content.view-invoice {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background: $view-header-bg;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 40%;
+  }
+  .form-card {
+    width: 25rem;
+    svg > path {
+      stroke: $site-nav-list-hover-color;
+    }
+  }
+  .form-card a strong {
+    position: relative;
+    top: 18px;
+  }
+  @media (min-width: 992px) {
+    .form-card {
+      width: 28rem;
+    }
+  }
+}
+
+.social-auth {
+  li {
+    display: inline-block;
+  }
+  li a {
+    display: inline-block;
+    padding: 0.8rem 0.9rem;
+    border-radius: 4px;
+    border: 1px solid;
+    margin: 0 0.6rem;
+    transition: 0.15s ease-in;
+  }
+  li:nth-child(1) a {
+    // twiiter
+    background: $md-blue-400;
+    border-color: $md-blue-400;
+    color: #fff;
+  }
+  li:nth-child(2) a {
+    // facebook
+    background: $md-indigo-600;
+    border-color: $md-indigo-600;
+    color: #fff;
+  }
+  li:nth-child(3) a {
+    // google
+    background: $md-red-600;
+    border-color: $md-red-600;
+    color: #fff;
+  }
+}
+
+// error page (404)
+.view .view-content.view-error {
+  position: relative;
+  padding: 0;
+  .display-404 {
+    font-weight: 800;
+    text-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    font-size: 12rem;
+    margin-top: -8rem;
+  }
+  .display-404 > span {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    background: $brand-primary;
+    display: inline-block;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 88%;
+      height: 88%;
+      background: #fff;
+      border-radius: 100%;
+      top: 6%;
+      left: 6%;
+    }
+  }
+}
+
+// invoice
+.view .view-content.view-invoice .invoice-card {
+  width: 25rem;
+  min-width: 25rem;
+  max-width: 58rem;
+  @media (min-width: 992px) {
+    width: 58rem;
+  }
+}

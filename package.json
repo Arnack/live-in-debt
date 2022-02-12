@@ -1,0 +1,60 @@
+{
+  "name": "eract",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "eslint --fix-dry-run .",
+    "serve": "serve out",
+    "prettier:fix": "prettier --write \"**/*.{js,ts,tsx,json,css,html,yaml,scss,sass}\"",
+    "lint:fix": "eslint --fix . && npm run prettier:fix"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "draft-js": "^0.11.7",
+    "highcharts": "^9.3.3",
+    "highcharts-react-official": "^3.1.0",
+    "line-height": "^0.3.1",
+    "next": "10.1.3",
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-draft-wysiwyg": "^1.14.5",
+    "react-icons": "2.2.5",
+    "react-motion": "^0.5.2",
+    "react-notification-system": "^0.4.0",
+    "react-range": "^1.8.12",
+    "react-select": "^4.3.0",
+    "reactable": "^1.1.0",
+    "reactstrap": "^8.9.0",
+    "recharts": "^2.0.9",
+    "sass": "^1.32.8",
+    "screenfull": "^5.1.0",
+    "serve": "^11.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "eslint": "^7.23.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^3.1.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^2.0.2"
+  }
+}

@@ -1,0 +1,135 @@
+@import 'variables';
+
+.view-mail {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+
+  .mail-head {
+    border-bottom: 1px solid $md-grey-300;
+    height: 4.4em;
+    background: $md-blue-a700;
+    position: fixed;
+    width: 100%;
+    z-index: $zindex-navbar-fixed;
+  }
+
+  // ---- wrap for right elements
+  .right-elems .wrap {
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    position: relative;
+  }
+  // ----- profile
+  .right-elems .profile {
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      border: 2px solid $md-green-100;
+    }
+    padding: 0;
+  }
+  .right-elems .notify .badge {
+    font-size: 65%;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+  }
+
+  .email-nav {
+    width: 15em;
+    border-right: 1px solid $md-grey-300;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    position: fixed;
+    transition: 0.25s ease-in-out;
+    top: 4.4em;
+    background: #fff;
+    z-index: $zindex-navbar-fixed;
+    transform: translate(-100%, 0);
+    &.open {
+      transform: translate(0, 0);
+    }
+  }
+  @media (min-width: 768px) {
+    .email-nav {
+      transform: translate(0, 0);
+    }
+  }
+  .email-nav li a {
+    display: block;
+    font-size: 13px;
+    color: $body-color;
+    padding: 0.8rem;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    &:hover {
+      background: $md-blue-a200;
+      color: #fff;
+    }
+    > span.text {
+      margin-left: 0.8rem;
+      display: inline-block;
+      transform: translate(0, 1.5px);
+    }
+    &.active {
+      background: $md-blue-a400;
+      color: #fff;
+    }
+  }
+  .labels {
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      &:hover {
+        background: $md-blue-a200;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.view-mail .email-content-wrapper {
+  padding: 1.5rem;
+  padding-top: 6em;
+  width: 100%;
+  transition: 0.25s ease-in-out;
+  @media (min-width: 768px) {
+    width: calc(100% - 15em);
+    transform: translate(15em, 0);
+  }
+  .email-lists {
+    border: 2px solid $md-grey-200;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .email-lists li {
+    display: inline-block;
+    width: 300px;
+    padding: 1.5rem;
+    white-space: normal;
+    border-right: 1px solid $md-grey-300;
+    &:last-child {
+      border-color: transparent;
+    }
+  }
+  .email-lists li a {
+    color: $body-color;
+    display: block;
+    .summary,
+    .subject {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .email-lists li:hover {
+    background: $md-grey-100;
+  }
+}
+
+/// ### END

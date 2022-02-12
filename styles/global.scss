@@ -1,0 +1,364 @@
+@import 'variables'; // modify bootstrap variables and put extra variables in this file
+@import 'bootstrap'; // import full bootstrap here (as-is)
+
+// ---------- bootstrap override ------------
+// ------------------------------------------
+html {
+  font-size: $font-size-root;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  letter-spacing: 0.045rem;
+}
+*:focus {
+  outline: none !important;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+  }
+}
+hr {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+img {
+  max-width: 100%;
+}
+code {
+  font-size: 80%;
+  background: $md-deep-orange-50;
+  color: $md-brown-800;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family-sans-serif;
+}
+
+/** Bug fix for pre **/
+// @media (max-width: 575px) {
+//     .container {
+//         max-width: 100%;
+//     }
+// }
+
+// ------ buttons
+.btn {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09), 0 1px 2px rgba(0, 0, 0, 0.05);
+  &:focus {
+    box-shadow: none;
+  }
+}
+.btn-fab {
+  border-radius: 50%;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+}
+.btn-fab.btn-sm {
+  min-width: 32px;
+  min-height: 32px;
+}
+.btn-fab.btn-lg {
+  min-width: 56px;
+  min-height: 56px;
+}
+
+// ----- breadcrumb
+.breadcrumb-item.active {
+  font-weight: 700;
+}
+
+// ----- dropdowns
+.dropdown > .dropdown-menu {
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+.dropdown.show > .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+.dropdown-menu {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.dropdown-item {
+  padding: 7px $dropdown-item-padding-x;
+  a {
+    color: $body-color;
+  }
+}
+
+// ----- cards
+.card {
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+.card-inverse {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+// ----- utilities
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+// ---- reactable header
+.reactable-header-sortable > span {
+  display: inline-block;
+  position: relative;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    border: 4px solid transparent;
+    right: -1.2rem;
+  }
+  &::after {
+    border-color: $md-grey-500 transparent transparent transparent;
+    top: 11px;
+  }
+  &::before {
+    border-color: transparent transparent $md-grey-500 transparent;
+    top: 1px;
+  }
+}
+// hide one of the triangle on sort.
+.reactable-header-sort-asc.reactable-header-sortable > span::before,
+.reactable-header-sort-desc.reactable-header-sortable > span::after {
+  border-color: transparent;
+}
+
+// ---- Reactable pagination
+.reactable-pagination {
+  .reactable-page-button,
+  .reactable-next-page,
+  .reactable-previous-page {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.35rem 0.9rem;
+    font-size: 12px;
+    border: 1px solid $md-grey-200;
+    border-radius: 2px;
+    margin-right: 4px;
+  }
+  .reactable-current-page {
+    background: $md-blue-500;
+    color: #fff;
+  }
+  .reactable-next-page,
+  .reactable-previous-page {
+  }
+}
+
+// Modals Transition
+// -----------------
+// Because we can't add extra class directly in `.modal` through reactstrap react lib.
+// We attached it to `.modal-dialog` and controlled it via `.fade` and `.show` class of `.modal`
+.modal {
+  .modal-dialog {
+    margin-top: 8rem;
+  }
+  .modal-header .modal-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  &.fade {
+    perspective: 1300; // for 3d flip effect
+    .modalFadeInScale,
+    .modalSlideIn,
+    .modal3DFlipHorizontal,
+    .modal3DFlipVertical,
+    .modalFall,
+    .modalRapid {
+      &.modal-dialog {
+        transition: 0.3s;
+      }
+    }
+  }
+  &.show {
+    .modalFadeInScale,
+    .modalSlideIn,
+    .modal3DFlipHorizontal,
+    .modal3DFlipVertical,
+    .modalFall,
+    .modalRapid {
+      &.modal-dialog {
+        opacity: 1;
+      }
+    }
+  }
+
+  // === fadeInScale
+  .modalFadeInScale.modal-dialog {
+    transform: scale(0.7);
+  }
+  &.show .modalFadeInScale.modal-dialog {
+    transform: scale(1);
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  // ==== slideIn
+  .modalSlideIn.modal-dialog {
+    transform: translate(20%, 0);
+  }
+  &.show .modalSlideIn.modal-dialog {
+    transform: translate(0, 0);
+  }
+
+  // === 3D Flip (Horizontal)
+  .modal3DFlipHorizontal.modal-dialog {
+    transform: rotateY(-70deg);
+  }
+  &.show .modal3DFlipHorizontal.modal-dialog {
+    transform: rotateY(0);
+    transform-style: preserve-3d;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  // === 3D Flip (Vertical)
+  .modal3DFlipVertical.modal-dialog {
+    transform: rotateX(-70deg);
+  }
+  &.show .modal3DFlipVertical.modal-dialog {
+    transform: rotateX(0);
+    transform-style: preserve-3d;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  // === fall
+  .modalFall.modal-dialog {
+    transform-style: preserve-3d;
+    transform: translateZ(600px) rotateX(20deg);
+  }
+  &.show .modalFall.modal-dialog {
+    transform: translateZ(0px) rotateX(0deg);
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  // === Fast Train
+  &.show .modal-dialog.modalRapid {
+    animation: modalRapid 0.5s forwards ease-out;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  @-webkit-keyframes modalRapid {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(calc(-100vw - 50%), 0, 0);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translate3d(100px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes modalRapid {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(calc(-100vw - 50%), 0, 0);
+      transform: translate3d(calc(-100vw - 50%), 0, 0);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translate3d(100px, 0, 0);
+      transform: translate3d(100px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+// ====== CUSTOM SCROLLBAR OVERRIDE
+
+.scrollarea-content {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.scrollarea {
+  position: relative;
+  overflow: hidden;
+
+  .scrollbar-container {
+    &.horizontal {
+      width: 100%;
+      height: 10px;
+      left: 0;
+      bottom: 0;
+
+      .scrollbar {
+        width: 20px;
+        height: 8px;
+        background: black;
+        margin-top: 1px;
+      }
+    }
+
+    &.vertical {
+      width: 10px;
+      height: 100%;
+      right: 0;
+      top: 0;
+
+      .scrollbar {
+        width: 8px;
+        height: 20px;
+        background: black;
+        margin-left: 1px;
+      }
+    }
+
+    position: absolute;
+    background: none;
+    opacity: 0.1;
+    z-index: 9999;
+
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+
+    &:hover {
+      background: gray;
+      opacity: 0.6 !important;
+    }
+
+    &.active {
+      background: gray;
+      opacity: 0.6 !important;
+    }
+  }
+
+  &:hover .scrollbar-container {
+    opacity: 0.3;
+  }
+}
+
+@import 'site-nav';
+@import 'site-layout';
+@import 'site-head';
+@import 'dashboard';
+@import 'mail';
+@import 'custom-pages';

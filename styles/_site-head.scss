@@ -1,0 +1,56 @@
+@import 'variables';
+
+// ===== SITE HEADER ======
+.site-head {
+  height: 4.4em;
+  // ---- wrap for right elements
+  .right-elems .wrap {
+    padding: 0.5rem;
+    margin-left: 1.8rem;
+    cursor: pointer;
+    position: relative;
+    .dropdown-item:active {
+      background: $md-grey-100;
+      color: $md-grey-900;
+    }
+  }
+  // ----- profile
+  .right-elems .profile {
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      border: 2px solid $md-green-100;
+    }
+    padding: 0;
+  }
+
+  .right-elems .notify .badge {
+    font-size: 65%;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+  }
+  // ----- site-search
+  .site-search {
+    position: relative;
+    input {
+      font-size: $font-size-root;
+      border: none;
+      border-radius: 1px;
+      padding-left: 3.5rem;
+      transition: 0.2s ease-in;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+    }
+    > svg {
+      position: absolute;
+      top: 0.8rem;
+      left: 1rem;
+    }
+  }
+}
+
+.full-screen-wrapper {
+  margin-top: 108px;
+}

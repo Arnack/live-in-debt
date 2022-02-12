@@ -1,0 +1,146 @@
+@import 'md-colors';
+
+// ======== Theme Blue
+// ------- site-nav
+// ----------------
+$site-nav-bg: $md-white;
+$site-nav-toggle-color: $md-blue-a700;
+$site-nav-head-color: $md-grey-900;
+$site-nav-head-border-color: $md-blue-50;
+$site-nav-list-color: lighten($md-grey-900, 8%);
+$site-nav-list-hover-color: $md-blue-a700;
+
+// ------ view-header
+// ------------------
+$view-header-bg: $site-nav-toggle-color;
+
+/// MORE COMING SOON
+
+/// ####### END #######
+
+// bootstrap override
+// ------------------
+$brand-primary: $md-blue-a700;
+$brand-success: $md-green-a700;
+$brand-info: $md-light-blue-a700;
+$brand-warning: $md-amber-a700;
+$brand-danger: darken($md-red-a200, 10%);
+
+// ----- body$
+$body-bg: $md-white;
+$body-color: $md-grey-900;
+$inverse-bg: $md-grey-900;
+
+// ---- grids
+$grid-gutter-width-base: 20px;
+
+// ------ Typograpy
+$font-family-sans-serif: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif;
+$font-size-root: 14px;
+$border-radius: 0.15rem;
+$border-radius-sm: 0.1rem;
+$border-radius-lg: 0.24rem;
+$headings-font-weight: 700;
+
+$small-font-size: 76%;
+
+// ------ Buttons
+$btn-secondary-border: darken($md-grey-300, 3%);
+
+// ------- dropdowns
+$dropdown-border-color: rgba($md-black, 0.1);
+$dropdown-link-hover-bg: lighten($md-blue-grey-50, 2%);
+
+// ------ Links
+$link-hover-decoration: none;
+
+// ------ states
+$state-success-text: $md-green-900;
+$state-success-bg: $md-green-a100;
+
+$state-info-text: $md-blue-900;
+$state-info-bg: $md-light-blue-a100;
+
+$state-warning-text: $md-orange-900;
+$state-warning-bg: $md-orange-100;
+
+$state-danger-text: $md-red-900;
+$state-danger-bg: $md-red-100;
+
+// ------- breadcrumbs
+$breadcrumb-bg: $md-grey-100;
+
+// ------- tags
+$tag-font-weight: normal;
+$tag-font-size: 68%;
+$tag-padding-x: 0.3em;
+$tag-padding-y: 0.32em;
+
+// -------- badge
+$badge-font-size: 65%;
+
+// -------- pagination
+$pagination-padding-x: 0.95rem;
+$pagination-padding-y: 0.4rem;
+$pagination-padding-x-sm: 0.75rem;
+$pagination-padding-y-sm: 0.26rem;
+$pagination-padding-x-lg: 1.5rem;
+$pagination-padding-y-lg: 0.7rem;
+$pagination-color: $md-grey-800;
+
+// ------- Forms
+$input-padding-x: 0.8rem;
+$input-padding-y: 0.65rem;
+$input-line-height: 1.25;
+
+$input-border-focus: $md-blue-a100;
+$input-group-addon-bg: $md-blue-grey-50;
+$input-group-addon-border-color: $md-blue-grey-100;
+
+// ------ Cards
+$card-border-width: 1px;
+$card-border-color: $md-blue-grey-50;
+$card-spacer-x: 1.6rem;
+$card-spacer-y: 1rem;
+$card-img-overlay-padding: 1.4rem;
+$card-columns-gap: 1.3rem;
+$card-cap-bg: $md-grey-50;
+
+// ------- Tables
+$table-cell-padding: 0.8rem;
+$table-sm-cell-padding: 0.35rem;
+
+$table-bg: transparent;
+
+$table-inverse-bg: $md-blue-grey-900;
+$table-inverse-color: $md-white;
+
+$table-bg-accent: rgba($md-black, 0.05);
+$table-bg-hover: rgba($md-black, 0.075);
+$table-bg-active: $table-bg-hover;
+
+$table-head-bg: $md-grey-100;
+$table-head-color: $md-grey-800;
+
+$table-border-color: $md-grey-200;
+
+// --------- Breadcrumbs
+$breadcrumb-bg: transparent;
+$breadcrumb-padding-y: 0.3rem;
+$breadcrumb-padding-x: 0.1rem;
+$breadcrumb-item-padding: 0.5rem;
+$breadcrumb-divider-color: $body-color;
+$breadcrumb-active-color: $body-color;
+$breadcrumb-divider: '→';
+
+// ------ Z-Index
+$zindex-dropdown-backdrop: 990 !default;
+$zindex-navbar: 1000 !default;
+$zindex-dropdown: 1000 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+$zindex-navbar-fixed: 1030 !default;
+$zindex-navbar-sticky: 1030 !default;
+$zindex-modal-bg: 1040 !default;
+$zindex-modal: 1050 !default;
