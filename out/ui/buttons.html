@@ -1,1 +1,540 @@
-<!DOCTYPE html><html lang="en"><head><link rel="shortcut icon" href="/favicon.png"/><link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet"/><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><meta name="description" content="Eract is a reactjs admin template build upon bootstrap 4 and uses official create-react-app cli tool. It doesn&#x27;t use redux or flux so it&#x27;s easy for begineers to catch it."/><title>Eract - ReactJS Bootstrap 4 Admin Template</title><meta name="next-head-count" content="4"/><link rel="preload" href="/_next/static/css/996334f4951a2d06ff75.css" as="style"/><link rel="stylesheet" href="/_next/static/css/996334f4951a2d06ff75.css" data-n-g=""/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/webpack-5cd214f1edd5c7b00923.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework-f6f34dcbadfd57761f89.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons-ec94869c3d1e2128f6ef.js" as="script"/><link rel="preload" href="/_next/static/chunks/main-37d19dfcf5a2c2c445cd.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-fc0d7993aab9c5b8ed9e.js" as="script"/><link rel="preload" href="/_next/static/chunks/658-94ed75f70b976884f3e6.js" as="script"/><link rel="preload" href="/_next/static/chunks/695-c83c2b61a65d0e42d107.js" as="script"/><link rel="preload" href="/_next/static/chunks/9-fe15fa91817dd850b345.js" as="script"/><link rel="preload" href="/_next/static/chunks/522-3aef1ee3ade221fa9903.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/ui/buttons-0eab96b9569cade0e9e7.js" as="script"/></head><body><div id="__next"><div class="app-wrapper"><nav class="site-nav "><header class="nav-head"><a href="/"><svg width="24px" height="30px" viewBox="11 4 50 52" version="1.1" xmlns="http://www.w3.org/2000/svg"><path id="Path" stroke-width="12" fill="none" d="M26.5282909,38.9526768 C26.5282909,38.9526768 49.3408202,31.7856836 49.3408202,28.3647852 C49.3408202,24.9438868 49.5702829,11.7001695 37.0898141,17.411107 C24.6093454,23.1220444 24.821289,23.6064453 24.821289,23.6064453 C24.821289,23.6064453 22.8105177,47.2876359 26.528291,53.5093155 C30.2460643,59.7309951 52.7998045,53.5093155 54.7998045,53.5093155"></path></svg><strong class="h4 text-uppercase">ract</strong></a><div class="toggle-dot "></div></header><div class="scrollarea nav-list-container"><div style="margin-top:0;margin-left:0" class="scrollarea-content " tabindex="1"><ul class="list-unstyled nav-list clearfix"><li><div class="nav-list-title">Views</div></li><li><a href="/"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" class="icon-dashboard" style="vertical-align:middle;color:#2962FF"><g><path d="m21.6 5h13.4v10h-13.4v-10z m0 30v-16.6h13.4v16.6h-13.4z m-16.6 0v-10h13.4v10h-13.4z m0-13.4v-16.6h13.4v16.6h-13.4z"></path></g></svg><span class="name">Dashboard</span></a></li><li><a href="/mail"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle;color:#00E676"><g><path d="m33.4 13.4v-3.4l-13.4 8.4-13.4-8.4v3.4l13.4 8.2z m0-6.8q1.3 0 2.3 1.1t0.9 2.3v20q0 1.3-0.9 2.3t-2.3 1.1h-26.8q-1.3 0-2.3-1.1t-0.9-2.3v-20q0-1.3 0.9-2.3t2.3-1.1h26.8z"></path></g></svg><span class="name">Mail</span></a></li><li><a href="/widgets"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle;color:#7C4DFF"><g><path d="m34.1 18.4c2.3 0 4.3 1.8 4.3 4.1s-2 4.1-4.3 4.1h-2.5v6.8c0 1.8-1.4 3.2-3.2 3.2h-6.4v-2.5c0-2.5-2-4.4-4.5-4.4s-4.5 1.9-4.5 4.4v2.5h-6.4c-1.8 0-3.2-1.4-3.2-3.2v-6.4h2.5c2.5 0 4.4-2 4.4-4.5s-1.9-4.5-4.4-4.5h-2.5v-6.4c0-1.8 1.4-3.2 3.2-3.2h6.8v-2.5c0-2.3 1.8-4.3 4.1-4.3s4.1 2 4.1 4.3v2.5h6.8c1.8 0 3.2 1.4 3.2 3.2v6.8h2.5z"></path></g></svg><span class="name">Widgets</span> <span class="badge text-uppercase" style="background:#7C4DFF;color:#fff">10</span></a></li><li><div class="nav-list-title">Components</div></li><li class=""><a href=""><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m31.6 18.4v-10h-23.2v10h3.2v3.2h3.4v3.4h3.4v-3.4h3.2v3.4h3.4v-3.4h3.4v-3.2h3.2z m-3.2 11.6v-3.4h-3.4v3.4h3.4z m-6.8 0v-3.4h-3.2v3.4h3.2z m-6.6 0v-3.4h-3.4v3.4h3.4z m16.6-25c1.8 0 3.4 1.6 3.4 3.4v23.2c0 1.8-1.6 3.4-3.4 3.4h-23.2c-1.8 0-3.4-1.6-3.4-3.4v-23.2c0-1.8 1.6-3.4 3.4-3.4h23.2z m-20 10h3.4v3.4h-3.4v-3.4z m13.4 0h3.4v3.4h-3.4v-3.4z m-6.6 0h3.2v3.4h3.4v3.2h-3.4v-3.2h-3.2v3.2h-3.4v-3.2h3.4v-3.4z m10 6.6v3.4h3.2v-3.4h-3.2z m-16.8 0h-3.2v3.4h3.2v-3.4z"></path></g></svg><span class="name">Elements</span><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="14" width="14" viewBox="0 0 40 40" class="icon-down" style="vertical-align:middle"><g><path d="m16.6 10l10 10-10 10-2.3-2.3 7.7-7.7-7.7-7.7z"></path></g></svg></a><div class="collapse"><ul class="inner-drop list-unstyled"><li><a class="active" href="/ui/buttons">Buttons</a></li><li><a href="/ui/typography">Typography</a></li><li><a href="/ui/cards">Cards</a></li><li><a href="/ui/modals">Modals</a></li><li><a href="/ui/notification">Notification</a></li><li><a href="/ui/extras">Extras</a></li></ul></div></li><li class=""><a href=""><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m20 26.6c-5-3.8-10-7.7-15-11.6l15-11.6 15 11.6c-5 3.9-10 7.8-15 11.6z m0 4.3l12.3-9.6 2.7 2.1-15 11.7-15-11.7 2.7-2.1z"></path></g></svg><span class="name">Forms</span><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="14" width="14" viewBox="0 0 40 40" class="icon-down" style="vertical-align:middle"><g><path d="m16.6 10l10 10-10 10-2.3-2.3 7.7-7.7-7.7-7.7z"></path></g></svg></a><div class="collapse"><ul class="inner-drop list-unstyled"><li><a href="/forms/general">General</a></li><li><a href="/forms/advanced">Advanced</a></li></ul></div></li><li><a href="/charts"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m23.4 10l15 20h-36.8l10-13.4 7.5 10 2.7-1.9-4.7-6.3z"></path></g></svg><span class="name">Charts</span> <span class="badge badge-primary badge-chart text-uppercase">mixed</span></a></li><li><a href="/tables"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m33.4 13.4v-6.8h-6.8v6.8h6.8z m0 10v-6.8h-6.8v6.8h6.8z m0 10v-6.8h-6.8v6.8h6.8z m-10-20v-6.8h-6.8v6.8h6.8z m0 10v-6.8h-6.8v6.8h6.8z m0 10v-6.8h-6.8v6.8h6.8z m-10-20v-6.8h-6.8v6.8h6.8z m0 10v-6.8h-6.8v6.8h6.8z m0 10v-6.8h-6.8v6.8h6.8z m20-30c1.8 0 3.2 1.4 3.2 3.2v26.8c0 1.8-1.4 3.2-3.2 3.2h-26.8c-1.8 0-3.2-1.4-3.2-3.2v-26.8c0-1.8 1.4-3.2 3.2-3.2h26.8z"></path></g></svg><span class="name">Tables</span></a></li><li class=""><a href=""><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m35 28.4v-23.4h-23.4v23.4h23.4z m0-26.8c1.8 0 3.4 1.6 3.4 3.4v23.4c0 1.8-1.6 3.2-3.4 3.2h-23.4c-1.8 0-3.2-1.4-3.2-3.2v-23.4c0-1.8 1.4-3.4 3.2-3.4h23.4z m-30 6.8v26.6h26.6v3.4h-26.6c-1.8 0-3.4-1.6-3.4-3.4v-26.6h3.4z"></path></g></svg><span class="name">Pages</span><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="14" width="14" viewBox="0 0 40 40" class="icon-down" style="vertical-align:middle"><g><path d="m16.6 10l10 10-10 10-2.3-2.3 7.7-7.7-7.7-7.7z"></path></g></svg></a><div class="collapse"><ul class="inner-drop list-unstyled"><li><a href="/pages/signin">Sign In</a></li><li><a href="/pages/register">Register</a></li><li><a href="/pages/forget">Forget Pass</a></li><li><a href="/pages/404">404</a></li><li><a href="/pages/invoice">Invoice</a></li></ul></div></li></ul></div></div></nav><div class="content-container "><div class="menu-dropshadow" style="display:none"></div><header class="site-head d-flex align-items-center justify-content-between"><div class="wrap mr-4"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="24" width="24" viewBox="0 0 40 40" style="vertical-align:middle;color:#fff;cursor:pointer"><g><path d="m5 10h30v3.4h-30v-3.4z m0 11.6v-3.2h30v3.2h-30z m0 8.4v-3.4h30v3.4h-30z"></path></g></svg></div><form class="col-7 col-sm-8 col-md-7 p-0 site-search"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="22" width="22" viewBox="0 0 40 40" style="vertical-align:middle;color:#515151"><g><path d="m15.9 23.4c4.1 0 7.5-3.4 7.5-7.5s-3.4-7.5-7.5-7.5-7.5 3.3-7.5 7.5 3.3 7.5 7.5 7.5z m10 0l8.2 8.2-2.5 2.5-8.2-8.2v-1.4l-0.5-0.4c-1.9 1.6-4.4 2.5-7 2.5-6.1 0-10.9-4.7-10.9-10.7s4.8-10.9 10.9-10.9 10.7 4.8 10.7 10.9c0 2.6-0.9 5.1-2.5 7l0.4 0.5h1.4z"></path></g></svg><input type="text" placeholder="Type your search ..." class="form-control"/></form><div class="right-elems ml-auto d-flex"><div class="wrap hidden-sm-down"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="22" width="22" viewBox="0 0 40 40" style="vertical-align:middle;color:#fff"><g><path d="m31.6 5c1.8 0 3.4 1.6 3.4 3.4v6.6h-3.4v-6.6h-6.6v-3.4h6.6z m0 26.6v-6.6h3.4v6.6c0 1.8-1.6 3.4-3.4 3.4h-6.6v-3.4h6.6z m-23.2-6.6v6.6h6.6v3.4h-6.6c-1.8 0-3.4-1.6-3.4-3.4v-6.6h3.4z m-3.4-16.6c0-1.8 1.6-3.4 3.4-3.4h6.6v3.4h-6.6v6.6h-3.4v-6.6z"></path></g></svg></div><div class="wrap notify hidden-sm-down"><div class="dropdown"><div aria-haspopup="true" class="" aria-expanded="false"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="22" width="22" viewBox="0 0 40 40" style="vertical-align:middle;color:#fff"><g><path d="m26.6 28.4v-10c0-4.2-2.5-7.5-6.6-7.5s-6.6 3.3-6.6 7.5v10h13.2z m3.4-1.8l3.4 3.4v1.6h-26.8v-1.6l3.4-3.4v-8.2c0-5.2 2.7-9.4 7.5-10.6v-1.2c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5v1.2c4.8 1.2 7.5 5.5 7.5 10.6v8.2z m-10 10c-1.8 0-3.4-1.4-3.4-3.2h6.8c0 1.8-1.6 3.2-3.4 3.2z"></path></g></svg><span class="badge badge-danger">4</span></div><div tabindex="-1" role="menu" style="min-width:18rem" aria-hidden="true" class="dropdown-menu dropdown-menu-right"><h6 tabindex="-1" class="dropdown-header">You have 4 new notifications</h6><div tabindex="-1" class="dropdown-divider"></div><button type="button" tabindex="0" role="menuitem" class="mb-2 dropdown-item"><p>Server Upgrade Required</p><div style="height:3px" class="progress"><div class="progress-bar bg-danger" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div></button><button type="button" tabindex="0" role="menuitem" class="d-flex align-items-center dropdown-item"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="28" width="28" viewBox="0 0 40 40" class="text-success" style="vertical-align:middle"><g><path d="m28.4 21.6h-5v-6.6h-6.8v6.6h-5l8.4 8.4z m3.9-4.9c4.3 0.3 7.7 3.9 7.7 8.3 0 4.6-3.7 8.4-8.4 8.4h-21.6c-5.5 0-10-4.5-10-10 0-5.2 3.9-9.4 8.9-10 2.1-3.9 6.3-6.8 11.1-6.8 6.1 0 11.1 4.3 12.3 10.1z"></path></g></svg><div class="ml-3"><div>5 App Downloaded</div><small class="text-muted">5 min ago</small></div></button><button type="button" tabindex="0" role="menuitem" class="d-flex align-items-center dropdown-item"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="28" width="28" viewBox="0 0 40 40" class="text-warning" style="vertical-align:middle"><g><path d="m33.4 13.4v-3.4l-13.4 8.4-13.4-8.4v3.4l13.4 8.2z m0-6.8q1.3 0 2.3 1.1t0.9 2.3v20q0 1.3-0.9 2.3t-2.3 1.1h-26.8q-1.3 0-2.3-1.1t-0.9-2.3v-20q0-1.3 0.9-2.3t2.3-1.1h26.8z"></path></g></svg><div class="ml-3"><div>Roni sent you a message</div><small class="text-muted">2 hours ago</small></div></button><button type="button" tabindex="0" role="menuitem" class="d-flex align-items-center dropdown-item"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="28" width="28" viewBox="0 0 40 40" class="text-primary" style="vertical-align:middle"><g><path d="m30 15c2.7 0 5 2.3 5 5v2.6c0 1.8-1.5 3.3-3.3 3.3-0.8 0-1.6-0.4-2.2-1l-3.6-3.6-3.6 3.6c-1.3 1.3-3.4 1.3-4.6 0l-3.6-3.6-3.6 3.6c-0.6 0.6-1.4 1-2.2 1-1.8 0-3.3-1.5-3.3-3.3v-2.6c0-2.7 2.3-5 5-5h8.4v-3.4h3.2v3.4h8.4z m-2.3 11.6c1.1 1.1 2.5 1.8 4 1.8 1.3 0 2.4-0.4 3.3-1.1v7.7c0 0.9-0.7 1.6-1.6 1.6h-26.8c-0.9 0-1.6-0.7-1.6-1.6v-7.7c0.9 0.7 2 1.1 3.3 1.1 1.5 0 3-0.7 4-1.8l1.8-1.8 1.8 1.8c2.2 2.2 6 2.2 8.2 0l1.8-1.8z m-7.7-16.6c-1.8 0-3.4-1.6-3.4-3.4 0-0.6 0.3-1.2 0.6-1.7l2.8-4.9 2.8 4.9c0.3 0.5 0.6 1.1 0.6 1.7 0 1.8-1.5 3.4-3.4 3.4z"></path></g></svg><div class="ml-3"><div>You&#x27;re earned a badge</div><small class="text-muted">12 hours ago</small></div></button></div></div></div><div class="wrap profile"><div class="dropdown"><div aria-haspopup="true" class="" aria-expanded="false"><img src="http://i.imgur.com/0rVeh4A.jpg" alt="avatar"/></div><div tabindex="-1" role="menu" style="min-width:12rem" aria-hidden="true" class="dropdown-menu dropdown-menu-right"><h6 tabindex="-1" class="dropdown-header">Balance: $993.4</h6><div tabindex="-1" class="dropdown-divider"></div><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="16" width="16" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m20 33.4c7.3 0 13.4-6.1 13.4-13.4 0-1.3-0.3-2.6-0.6-3.7-1.2 0.3-2.4 0.3-3.7 0.3-5.7 0-10.6-2.7-13.6-7-1.7 4-4.9 7.3-8.8 9-0.1 0.5-0.1 0.9-0.1 1.4 0 7.3 6.1 13.4 13.4 13.4z m0-30c9.2 0 16.6 7.4 16.6 16.6s-7.4 16.6-16.6 16.6-16.6-7.4-16.6-16.6 7.4-16.6 16.6-16.6z m5 16.2c1.2 0 2.1 0.9 2.1 2s-0.9 2.2-2.1 2.2-2.1-1-2.1-2.2 0.9-2 2.1-2z m-10 0c1.2 0 2.1 0.9 2.1 2s-0.9 2.2-2.1 2.2-2.1-1-2.1-2.2 0.9-2 2.1-2z"></path></g></svg> <a href="#na">Profile</a></button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="16" width="16" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m33.4 13.4v-3.4l-13.4 8.4-13.4-8.4v3.4l13.4 8.2z m0-6.8q1.3 0 2.3 1.1t0.9 2.3v20q0 1.3-0.9 2.3t-2.3 1.1h-26.8q-1.3 0-2.3-1.1t-0.9-2.3v-20q0-1.3 0.9-2.3t2.3-1.1h26.8z"></path></g></svg> <a href="#na">Inbox</a></button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="16" width="16" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m20 1.6l15 6.8v10c0 9.2-6.4 17.8-15 20-8.6-2.2-15-10.8-15-20v-10z m0 18.4v14.9c6.2-1.9 10.8-8 11.6-14.9h-11.6z m0 0v-14.7l-11.6 5.2v9.5h11.6z"></path></g></svg> <a href="#na">Security</a></button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="16" width="16" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m25.1 18.8c0.9-1 1.5-2.3 1.5-3.8 0-3.7-2.9-6.6-6.6-6.6s-6.6 2.9-6.6 6.6h3.2c0-1.8 1.6-3.4 3.4-3.4s3.4 1.6 3.4 3.4c0 0.9-0.4 1.7-1.1 2.3l-2 2.2c-1.2 1.2-1.9 2.8-1.9 4.6v0.9h3.2c0-2.5 0.8-3.4 2-4.7z m-3.5 12.8v-3.2h-3.2v3.2h3.2z m-1.6-28.2c9.2 0 16.6 7.4 16.6 16.6s-7.4 16.6-16.6 16.6-16.6-7.4-16.6-16.6 7.4-16.6 16.6-16.6z"></path></g></svg> <a href="#na">Help</a></button><div class="text-right ml-3 mr-3 mt-2"><button class="btn btn-success btn-sm btn-block"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="15" width="15" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m29.7 8.6q5.3 4.5 5.3 11.4 0 6.3-4.4 10.6t-10.6 4.4-10.6-4.4-4.4-10.6q0-6.9 5.3-11.4l2.4 2.3q-4.3 3.6-4.3 9.1 0 4.8 3.4 8.2t8.2 3.4 8.2-3.4 3.4-8.2q0-5.5-4.3-9z m-8.1-3.6v16.6h-3.2v-16.6h3.2z"></path></g></svg> Logout</button></div></div></div></div></div></header><div class="view"><div class="view-header"><header class="title text-white"><h1 class="h4 text-uppercase">Buttons</h1><p class="mb-0">All button sizes, fab, default and outlined buttons</p></header></div><div class="view-content view-components"><div class="card"><div class="card-body"><div class="mb-5"><h6 class="card-title text-uppercase">Default Buttons</h6><button class="mb-2 btn btn-primary">Primary</button> <button class="mb-2 btn btn-secondary">Secondary</button> <button class="mb-2 btn btn-success">Success</button> <button class="mb-2 btn btn-info">Info</button> <button class="mb-2 btn btn-warning">Warning</button> <button class="mb-2 btn btn-danger">Danger</button></div><div class="mb-5"><h6 class="card-title text-uppercase">Outline Buttons</h6><button class="mb-2 btn btn-outline-primary">Primary</button> <button class="mb-2 btn btn-outline-secondary">Secondary</button> <button class="mb-2 btn btn-outline-success">Success</button> <button class="mb-2 btn btn-outline-info">Info</button> <button class="mb-2 btn btn-outline-warning">Warning</button> <button class="mb-2 btn btn-outline-danger">Danger</button></div><div class="mb-5"><h6 class="card-title text-uppercase">Fab Buttons</h6><div class="mb-2"><button class="btn-fab btn btn-secondary btn-lg"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="26" width="26" viewBox="0 0 40 40" style="vertical-align:middle;color:#DD2C00"><g><path d="m20 28.8l-10.3 6.2 2.7-11.7-9-7.9 11.9-1 4.7-11 4.7 11 11.9 1-9 7.9 2.7 11.7z"></path></g></svg></button> <button class="btn-fab btn btn-secondary"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle;color:#DD2C00"><g><path d="m20 28.8l-10.3 6.2 2.7-11.7-9-7.9 11.9-1 4.7-11 4.7 11 11.9 1-9 7.9 2.7 11.7z"></path></g></svg></button> <button class="btn-fab btn btn-secondary btn-sm"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="16" width="16" viewBox="0 0 40 40" style="vertical-align:middle;color:#DD2C00"><g><path d="m20 28.8l-10.3 6.2 2.7-11.7-9-7.9 11.9-1 4.7-11 4.7 11 11.9 1-9 7.9 2.7 11.7z"></path></g></svg></button></div><button class="btn-fab btn btn-primary btn-lg"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="26" width="26" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"></path></g></svg></button> <button class="btn-fab btn btn-outline-success btn-lg"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="26" width="26" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"></path></g></svg></button> <button class="btn-fab btn btn-warning"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"></path></g></svg></button> <button class="btn-fab btn btn-outline-warning"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="18" width="18" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"></path></g></svg></button> <button class="btn-fab btn btn-info btn-sm"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="16" width="16" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"></path></g></svg></button> <button class="btn-fab btn btn-outline-info btn-sm"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="16" width="16" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"></path></g></svg></button> <button class="btn-fab btn btn-danger btn-sm"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="16" width="16" viewBox="0 0 40 40" style="vertical-align:middle"><g><path d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"></path></g></svg></button></div><div class="mb-5"><h6 class="card-title text-uppercase">Button Sizes</h6><button class="mb-2 btn btn-primary btn-lg">Large Button</button> <button class="mb-2 btn btn-warning">Normal Button</button> <button class="mb-2 btn btn-secondary btn-sm">Small Button</button> </div><div class="mb-5"><h6 class="card-title text-uppercase">Active and Disabled State</h6><button class="mb-2 btn btn-success btn-lg active">Active Button</button> <a href="#na" class="mb-2 btn btn-secondary btn-lg active">Link</a> <hr/><button disabled="" class="mb-2 btn btn-success btn-lg disabled">Disabled button</button> <button disabled="" class="mb-2 btn btn-secondary btn-lg disabled">Disabled Link</button></div><div class="mb-5"><h6 class="card-title text-uppercase">Block Buttons</h6><button class="btn btn-primary btn-lg btn-block">Block level button</button></div><div class="mb-5"><h6 class="h6 card-title text-uppercase">Button Dropdown</h6><div class="mb-4"><div role="group" class="btn-group-vertical"><button class="btn btn-secondary">1</button><button class="btn btn-secondary">2</button><div class="btn-group"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary">Dropdown</button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item">Dropdown Link</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item">Another Link</button></div></div></div></div><div class="mb-5"><div role="group" class="btn-group"><button class="btn btn-secondary">1</button><button class="btn btn-secondary">2</button><div class="btn-group"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary">Dropdown</button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item">Dropdown Link</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item">Another Link</button></div></div></div></div></div><div class="mb-5"><h6 class="card-title text-uppercase">Button Toolbar</h6><div role="group" class="mb-3 btn-group"><button class="btn btn-secondary">Left</button><button class="btn btn-info">Middle</button><button class="btn btn-secondary">Right</button></div><div role="toolbar" class="btn-toolbar"><div role="group" class="mr-2 btn-group"><button class="btn btn-secondary">1</button><button class="btn btn-secondary">2</button><button class="btn btn-secondary">3</button></div><div role="group" class="mr-2 btn-group"><button class="btn btn-secondary">4</button><button class="btn btn-secondary">5</button></div><div role="group" class="btn-group"><button class="btn btn-secondary">6</button></div></div></div></div></div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/ui/buttons","query":{},"buildId":"WV7jhvaaGNm6qHDeFErgp","nextExport":true,"autoExport":true,"isFallback":false}</script><script nomodule="" src="/_next/static/chunks/polyfills-bba4e3ae2a1f646feca8.js"></script><script src="/_next/static/chunks/webpack-5cd214f1edd5c7b00923.js" async=""></script><script src="/_next/static/chunks/framework-f6f34dcbadfd57761f89.js" async=""></script><script src="/_next/static/chunks/commons-ec94869c3d1e2128f6ef.js" async=""></script><script src="/_next/static/chunks/main-37d19dfcf5a2c2c445cd.js" async=""></script><script src="/_next/static/chunks/pages/_app-fc0d7993aab9c5b8ed9e.js" async=""></script><script src="/_next/static/chunks/658-94ed75f70b976884f3e6.js" async=""></script><script src="/_next/static/chunks/695-c83c2b61a65d0e42d107.js" async=""></script><script src="/_next/static/chunks/9-fe15fa91817dd850b345.js" async=""></script><script src="/_next/static/chunks/522-3aef1ee3ade221fa9903.js" async=""></script><script src="/_next/static/chunks/pages/ui/buttons-0eab96b9569cade0e9e7.js" async=""></script><script src="/_next/static/WV7jhvaaGNm6qHDeFErgp/_buildManifest.js" async=""></script><script src="/_next/static/WV7jhvaaGNm6qHDeFErgp/_ssgManifest.js" async=""></script><script> </script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,600,700"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <title>Жизнь в кредит</title>
+    <meta name="next-head-count" content="4" />
+    <link
+      rel="preload"
+      href="/_next/static/css/1310abe9040d82ff6ae4.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/1310abe9040d82ff6ae4.css"
+      data-n-g=""
+    />
+    <noscript data-n-css=""></noscript>
+    <link
+      rel="preload"
+      href="/_next/static/chunks/webpack-c26ea3b59f3a456c97c2.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/framework-26671dbefcaf33510d95.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/commons-048856f7f636f3dd83f6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/main-be7505216cec2084315d.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/pages/_app-77baf885af675ba3afad.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/658-26b6f7d0450140795286.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/572-9b372ea94ef99969df66.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/707-a1f49ca1762363aa68fb.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/420-6ae76f272426edb9a6f7.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/720-a87b0e5e9fb03f484b60.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/522-d9e22ab13a9c979619fb.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/pages/ui/buttons-1bd15008e5a89e57d951.js"
+      as="script"
+    />
+  </head>
+  <body>
+    <div id="__next">
+      <div class="app-wrapper">
+        <div class="content-container">
+          <div class="menu-dropshadow" style="display: none"></div>
+          <header
+            class="site-head d-flex align-items-center justify-content-between"
+          >
+            <div class="wrap mr-4"></div>
+            <div class="right-elems ml-auto d-flex">
+              <div class="full-screen-wrapper wrap hidden-sm-down">
+                <svg
+                  fill="currentColor"
+                  preserveAspectRatio="xMidYMid meet"
+                  height="22"
+                  width="22"
+                  viewBox="0 0 40 40"
+                  style="vertical-align: middle; color: #fff"
+                >
+                  <g>
+                    <path
+                      d="m31.6 5c1.8 0 3.4 1.6 3.4 3.4v6.6h-3.4v-6.6h-6.6v-3.4h6.6z m0 26.6v-6.6h3.4v6.6c0 1.8-1.6 3.4-3.4 3.4h-6.6v-3.4h6.6z m-23.2-6.6v6.6h6.6v3.4h-6.6c-1.8 0-3.4-1.6-3.4-3.4v-6.6h3.4z m-3.4-16.6c0-1.8 1.6-3.4 3.4-3.4h6.6v3.4h-6.6v6.6h-3.4v-6.6z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </header>
+          <div class="view">
+            <div class="view-header">
+              <header class="title text-white">
+                <h1 class="h4 text-uppercase">Buttons</h1>
+                <p class="mb-0">
+                  All button sizes, fab, default and outlined buttons
+                </p>
+              </header>
+            </div>
+            <div class="view-content view-components">
+              <div class="card">
+                <div class="card-body">
+                  <div class="mb-5">
+                    <h6 class="card-title text-uppercase">Default Buttons</h6>
+                    <button class="mb-2 btn btn-primary">Primary</button>
+                    <button class="mb-2 btn btn-secondary">Secondary</button>
+                    <button class="mb-2 btn btn-success">Success</button>
+                    <button class="mb-2 btn btn-info">Info</button>
+                    <button class="mb-2 btn btn-warning">Warning</button>
+                    <button class="mb-2 btn btn-danger">Danger</button>
+                  </div>
+                  <div class="mb-5">
+                    <h6 class="card-title text-uppercase">Outline Buttons</h6>
+                    <button class="mb-2 btn btn-outline-primary">
+                      Primary
+                    </button>
+                    <button class="mb-2 btn btn-outline-secondary">
+                      Secondary
+                    </button>
+                    <button class="mb-2 btn btn-outline-success">
+                      Success
+                    </button>
+                    <button class="mb-2 btn btn-outline-info">Info</button>
+                    <button class="mb-2 btn btn-outline-warning">
+                      Warning
+                    </button>
+                    <button class="mb-2 btn btn-outline-danger">Danger</button>
+                  </div>
+                  <div class="mb-5">
+                    <h6 class="card-title text-uppercase">Fab Buttons</h6>
+                    <div class="mb-2">
+                      <button class="btn-fab btn btn-secondary btn-lg">
+                        <svg
+                          fill="currentColor"
+                          preserveAspectRatio="xMidYMid meet"
+                          height="26"
+                          width="26"
+                          viewBox="0 0 40 40"
+                          style="vertical-align: middle; color: #dd2c00"
+                        >
+                          <g>
+                            <path
+                              d="m20 28.8l-10.3 6.2 2.7-11.7-9-7.9 11.9-1 4.7-11 4.7 11 11.9 1-9 7.9 2.7 11.7z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </button>
+                      <button class="btn-fab btn btn-secondary">
+                        <svg
+                          fill="currentColor"
+                          preserveAspectRatio="xMidYMid meet"
+                          height="18"
+                          width="18"
+                          viewBox="0 0 40 40"
+                          style="vertical-align: middle; color: #dd2c00"
+                        >
+                          <g>
+                            <path
+                              d="m20 28.8l-10.3 6.2 2.7-11.7-9-7.9 11.9-1 4.7-11 4.7 11 11.9 1-9 7.9 2.7 11.7z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </button>
+                      <button class="btn-fab btn btn-secondary btn-sm">
+                        <svg
+                          fill="currentColor"
+                          preserveAspectRatio="xMidYMid meet"
+                          height="16"
+                          width="16"
+                          viewBox="0 0 40 40"
+                          style="vertical-align: middle; color: #dd2c00"
+                        >
+                          <g>
+                            <path
+                              d="m20 28.8l-10.3 6.2 2.7-11.7-9-7.9 11.9-1 4.7-11 4.7 11 11.9 1-9 7.9 2.7 11.7z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="btn-fab btn btn-primary btn-lg">
+                      <svg
+                        fill="currentColor"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="26"
+                        width="26"
+                        viewBox="0 0 40 40"
+                        style="vertical-align: middle"
+                      >
+                        <g>
+                          <path
+                            d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </button>
+                    <button class="btn-fab btn btn-outline-success btn-lg">
+                      <svg
+                        fill="currentColor"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="26"
+                        width="26"
+                        viewBox="0 0 40 40"
+                        style="vertical-align: middle"
+                      >
+                        <g>
+                          <path
+                            d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </button>
+                    <button class="btn-fab btn btn-warning">
+                      <svg
+                        fill="currentColor"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="18"
+                        width="18"
+                        viewBox="0 0 40 40"
+                        style="vertical-align: middle"
+                      >
+                        <g>
+                          <path
+                            d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </button>
+                    <button class="btn-fab btn btn-outline-warning">
+                      <svg
+                        fill="currentColor"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="18"
+                        width="18"
+                        viewBox="0 0 40 40"
+                        style="vertical-align: middle"
+                      >
+                        <g>
+                          <path
+                            d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </button>
+                    <button class="btn-fab btn btn-info btn-sm">
+                      <svg
+                        fill="currentColor"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        width="16"
+                        viewBox="0 0 40 40"
+                        style="vertical-align: middle"
+                      >
+                        <g>
+                          <path
+                            d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </button>
+                    <button class="btn-fab btn btn-outline-info btn-sm">
+                      <svg
+                        fill="currentColor"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        width="16"
+                        viewBox="0 0 40 40"
+                        style="vertical-align: middle"
+                      >
+                        <g>
+                          <path
+                            d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </button>
+                    <button class="btn-fab btn btn-danger btn-sm">
+                      <svg
+                        fill="currentColor"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        width="16"
+                        viewBox="0 0 40 40"
+                        style="vertical-align: middle"
+                      >
+                        <g>
+                          <path
+                            d="m21.6 15v5h5v3.4h-5v5h-3.2v-5h-5v-3.4h5v-5h3.2z m-1.6 18.4q4.8 0 8.2-3.5t3.4-8.3-3.4-8.2-8.2-3.4-8.2 3.4-3.4 8.2 3.4 8.3 8.2 3.5z m0-26.8q6.3 0 10.6 4.5t4.4 10.5-4.4 10.6-10.6 4.4-10.6-4.4-4.4-10.6 4.4-10.5 10.6-4.5z m16.6 2.9l-2.1 2.6-7.6-6.5 2.1-2.5z m-23.5-3.9l-7.6 6.4-2.1-2.5 7.6-6.4z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="mb-5">
+                    <h6 class="card-title text-uppercase">Button Sizes</h6>
+                    <button class="mb-2 btn btn-primary btn-lg">
+                      Large Button
+                    </button>
+                    <button class="mb-2 btn btn-warning">Normal Button</button>
+                    <button class="mb-2 btn btn-secondary btn-sm">
+                      Small Button
+                    </button>
+                  </div>
+                  <div class="mb-5">
+                    <h6 class="card-title text-uppercase">
+                      Active and Disabled State
+                    </h6>
+                    <button class="mb-2 btn btn-success btn-lg active">
+                      Active Button
+                    </button>
+                    <a href="#na" class="mb-2 btn btn-secondary btn-lg active"
+                      >Link</a
+                    >
+                    <hr />
+                    <button
+                      disabled=""
+                      class="mb-2 btn btn-success btn-lg disabled"
+                    >
+                      Disabled button
+                    </button>
+                    <button
+                      disabled=""
+                      class="mb-2 btn btn-secondary btn-lg disabled"
+                    >
+                      Disabled Link
+                    </button>
+                  </div>
+                  <div class="mb-5">
+                    <h6 class="card-title text-uppercase">Block Buttons</h6>
+                    <button class="btn btn-primary btn-lg btn-block">
+                      Block level button
+                    </button>
+                  </div>
+                  <div class="mb-5">
+                    <h6 class="h6 card-title text-uppercase">
+                      Button Dropdown
+                    </h6>
+                    <div class="mb-4">
+                      <div role="group" class="btn-group-vertical">
+                        <button class="btn btn-secondary">1</button
+                        ><button class="btn btn-secondary">2</button>
+                        <div class="btn-group">
+                          <button
+                            type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="dropdown-toggle btn btn-secondary"
+                          >
+                            Dropdown
+                          </button>
+                          <div
+                            tabindex="-1"
+                            role="menu"
+                            aria-hidden="true"
+                            class="dropdown-menu"
+                          >
+                            <button
+                              type="button"
+                              tabindex="0"
+                              role="menuitem"
+                              class="dropdown-item"
+                            >
+                              Dropdown Link</button
+                            ><button
+                              type="button"
+                              tabindex="0"
+                              role="menuitem"
+                              class="dropdown-item"
+                            >
+                              Another Link
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-5">
+                      <div role="group" class="btn-group">
+                        <button class="btn btn-secondary">1</button
+                        ><button class="btn btn-secondary">2</button>
+                        <div class="btn-group">
+                          <button
+                            type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="dropdown-toggle btn btn-secondary"
+                          >
+                            Dropdown
+                          </button>
+                          <div
+                            tabindex="-1"
+                            role="menu"
+                            aria-hidden="true"
+                            class="dropdown-menu"
+                          >
+                            <button
+                              type="button"
+                              tabindex="0"
+                              role="menuitem"
+                              class="dropdown-item"
+                            >
+                              Dropdown Link</button
+                            ><button
+                              type="button"
+                              tabindex="0"
+                              role="menuitem"
+                              class="dropdown-item"
+                            >
+                              Another Link
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <h6 class="card-title text-uppercase">Button Toolbar</h6>
+                    <div role="group" class="mb-3 btn-group">
+                      <button class="btn btn-secondary">Left</button
+                      ><button class="btn btn-info">Middle</button
+                      ><button class="btn btn-secondary">Right</button>
+                    </div>
+                    <div role="toolbar" class="btn-toolbar">
+                      <div role="group" class="mr-2 btn-group">
+                        <button class="btn btn-secondary">1</button
+                        ><button class="btn btn-secondary">2</button
+                        ><button class="btn btn-secondary">3</button>
+                      </div>
+                      <div role="group" class="mr-2 btn-group">
+                        <button class="btn btn-secondary">4</button
+                        ><button class="btn btn-secondary">5</button>
+                      </div>
+                      <div role="group" class="btn-group">
+                        <button class="btn btn-secondary">6</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/ui/buttons",
+        "query": {},
+        "buildId": "sF047mTfBQdVr5cbD1UD0",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false
+      }
+    </script>
+    <script
+      nomodule=""
+      src="/_next/static/chunks/polyfills-bba4e3ae2a1f646feca8.js"
+    ></script>
+    <script
+      src="/_next/static/chunks/webpack-c26ea3b59f3a456c97c2.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/framework-26671dbefcaf33510d95.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/commons-048856f7f636f3dd83f6.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/main-be7505216cec2084315d.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/pages/_app-77baf885af675ba3afad.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/658-26b6f7d0450140795286.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/572-9b372ea94ef99969df66.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/707-a1f49ca1762363aa68fb.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/420-6ae76f272426edb9a6f7.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/720-a87b0e5e9fb03f484b60.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/522-d9e22ab13a9c979619fb.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/pages/ui/buttons-1bd15008e5a89e57d951.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/sF047mTfBQdVr5cbD1UD0/_buildManifest.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/sF047mTfBQdVr5cbD1UD0/_ssgManifest.js"
+      async=""
+    ></script>
+    <script></script>
+  </body>
+</html>

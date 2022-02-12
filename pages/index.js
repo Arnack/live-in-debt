@@ -1,19 +1,22 @@
-import React from 'react';
-import { Card, CardBody } from 'reactstrap';
-import Layout from '../modules/layout';
-import TinyCharts from '../modules/charts/tinycharts';
-import AreaChartExample from '../modules/charts/areachart';
-import RadarChartExample from '../modules/charts/radarchart';
-import RadialBarChartExample from '../modules/charts/radialbarchart';
-import PieChartExample from '../modules/charts/piechart';
-import screenfull from 'screenfull';
+import React from "react";
+import { Card, CardBody } from "reactstrap";
+import Layout from "../modules/layout";
+import TinyCharts from "../modules/charts/tinycharts";
+import AreaChartExample from "../modules/charts/areachart";
+import RadarChartExample from "../modules/charts/radarchart";
+import RadialBarChartExample from "../modules/charts/radialbarchart";
+import PieChartExample from "../modules/charts/piechart";
+import screenfull from "screenfull";
 import IconFullScreen from "react-icons/lib/md/crop-free";
-import {RusMap} from "../components/rusmap/rusmap";
-import {MortgageChart} from "../components/mortgage/mortgage";
-import {MortgageToCitisents} from "../components/mortgageToCitisents/MortgageToSitisents";
-import {MortgagePercentAmongAllCredits} from "../components/mortgagePercentAmongAllCredits/MortgagePercentAmongAllCredits";
-import {AvarageInetersMortgageRate} from "../components/avarageInetersMortgageRate/AvarageInetersMortgageRate";
-
+import { RusMap } from "../components/rusmap/rusmap";
+import { MortgageChart } from "../components/mortgage/mortgage";
+import { MortgageToCitisents } from "../components/mortgageToCitisents/MortgageToSitisents";
+import { MortgagePercentAmongAllCredits } from "../components/mortgagePercentAmongAllCredits/MortgagePercentAmongAllCredits";
+import { AvarageInetersMortgageRate } from "../components/avarageInetersMortgageRate/AvarageInetersMortgageRate";
+import { SqMeterPrise } from "../components/sqMeterPrise/SqMeterPrise";
+import { MortgageNumByRegions } from "../components/mortgageumberByRegions/MortgageNumByRegions";
+import { KeyRate } from "../components/keyRate/KeyRate";
+import { BancBtCourt } from "../components/bancrouptByCourt/BancByCourt";
 
 const ViewHeader = () => (
   <div className="view-header">
@@ -46,6 +49,10 @@ export default function ChartsPage() {
             <AvarageInetersMortgageRate />
             {/*<AreaChartExample />*/}
           </div>
+          <div className="col-12 col-md-12 mb-12">
+            <MortgageNumByRegions />
+            {/*<AreaChartExample />*/}
+          </div>
 
           <div className="col-12 col-md-12 mb-12">
             <MortgageToCitisents />
@@ -55,21 +62,20 @@ export default function ChartsPage() {
             <MortgageChart />
             {/*<RadarChartExample />*/}
           </div>
+          <div className="col-12 col-md-6 mb-6">
+            <KeyRate />
+            {/*<RadarChartExample />*/}
+          </div>
+          <div className="col-12 col-md-6 mb-6">
+            <BancBtCourt />
+            {/*<RadarChartExample />*/}
+          </div>
           <div className="col-12 col-md-6 mb-4">
             <MortgagePercentAmongAllCredits />
             {/*<PieChartExample />*/}
           </div>
           <div className="col-12 col-md-6 mb-4">
-
-
-            {/*<iframe title="Средний уровень ипотечной ставки" aria-label="Map" id="datawrapper-chart-2TLYo"*/}
-            {/*        src="https://datawrapper.dwcdn.net/2TLYo/1/" scrolling="no" frameBorder="0"*/}
-            {/*        style="width: 0; min-width: 100% !important; border: none;" height="444"></iframe>*/}
-            {/*<script*/}
-            {/*    type="text/javascript">!function (){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();*/}
-            {/*</script>*/}
-
-            {/*<PieChartExample />*/}
+            <SqMeterPrise />
           </div>
         </div>
       </ViewContent>
