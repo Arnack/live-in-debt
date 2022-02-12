@@ -527,6 +527,7 @@ export const BancrouptMap = () => {
         data={datas[currentDateIdx]}
       />
       <input
+          value={currentDateIdx}
         min={0}
         max={5}
         onChange={(e) => setDateIdx(+e.target.value)}

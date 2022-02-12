@@ -49,7 +49,7 @@ const options = {
 
 
 
-export const RusMap = ({ mapTitle,  data }) => {
+export const RusMap = ({ mapTitle,  data, minVal, maxVal, stopColors }) => {
 
 
     const mapOptions = {
@@ -57,8 +57,10 @@ export const RusMap = ({ mapTitle,  data }) => {
             text: mapTitle || ''
         },
         colorAxis: {
-            min: 0,
-            // stops: [[0.4, '#f88f8f'], [0.65, '#fd4d4d'], [1, '#ff0000']]
+            min: minVal || undefined,
+            max: maxVal || undefined,
+            // stops: stopColors || [[0.4, '#f88f8f'], [0.65, '#fd4d4d'], [1, '#ff0000']]
+            stops: stopColors || undefined
         },
 
         series: [

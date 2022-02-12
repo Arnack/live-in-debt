@@ -601,10 +601,11 @@ export const MortgageNumByRegions = () => {
   return (
     <>
       <RusMap
-        mapTitle={"Число выданных ипотечных кредитов"}
+        mapTitle={"Выданные ипотечные кредиты в 2021 г."}
         data={datas[currentMIdx]}
       />
       <input
+        value={currentMIdx}
         min={0}
         max={6}
         onChange={(e) => setCMI(+e.target.value)}

@@ -18,6 +18,7 @@ import { MortgageNumByRegions } from "../components/mortgageumberByRegions/Mortg
 import { KeyRate } from "../components/keyRate/KeyRate";
 import { BancBtCourt } from "../components/bancrouptByCourt/BancByCourt";
 import { BancrouptMap } from "../components/bancrouptMAP/BancrouptMap";
+import {OutdatedMortMap} from "../components/outdatedMortgMap/OutdatedMortMap";
 
 const ViewHeader = () => (
   <div className="view-header">
@@ -80,6 +81,18 @@ export default function ChartsPage() {
             </div>
 
             <p style={{ maxWidth: "400px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+              aspernatur assumenda autem culpa dicta labore laudantium repellat
+              ullam voluptatum. A aliquid commodi, dolorum facere facilis
+              laudantium obcaecati odio porro possimus.
+            </p>
+
+            <div className="col-12 col-md-6 mb-6">
+              <OutdatedMortMap />
+              {/*<AreaChartExample />*/}
+            </div>
+
+            <p style={{ maxWidth: "400px", marginTop: '40px' }}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
               aspernatur assumenda autem culpa dicta labore laudantium repellat
               ullam voluptatum. A aliquid commodi, dolorum facere facilis

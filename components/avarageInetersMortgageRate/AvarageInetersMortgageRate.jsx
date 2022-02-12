@@ -360,10 +360,13 @@ export const AvarageInetersMortgageRate = () => {
   return (
     <>
       <RusMap
-        mapTitle={"Средний уровень ставки"}
+        mapTitle={"Средний уровень ипотечной ставки"}
         data={datas[currentYearIdx]}
+        maxVal={12}
+        minVal={6}
       />
       <input
+          value={currentYearIdx}
         min={0}
         max={3}
         onChange={(e) => setCYI(+e.target.value)}
