@@ -389,8 +389,12 @@ export default function ChartsPage() {
                         <div className="col-12 col-md-4 mb-4">
                             <strong>Проект был запушен во время хакатона «Прожектор-2022»</strong>
                             <p>За время время хакатона, команда не взяла ни одного кредита.<br/>
-                            Репозитории проекта открыты для контрибьюции:
-                                <a href="https://github.com/Arnack/live-in-debt">live-in-debt</a>
+                            Репозитории проекта открыты для контрибьюции: <a
+                                    style={{
+                                        color: "white",
+                                        textDecoration: "underline"
+                                    }}
+                                    href="https://github.com/Arnack/live-in-debt">live-in-debt</a>
                             </p>
                         </div>
                         <div className="col-12 col-md-4 mb-4">
