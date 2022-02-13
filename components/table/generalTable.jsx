@@ -1052,9 +1052,6 @@ export default function GeneralTable() {
                                 <Th column="baddebt">
                                     <span>Количество просроченных кредитов</span>
                                 </Th>
-                                <Th column="interest">
-                                    <span>Средняя кредитная ставка</span>
-                                </Th>
                                 <Th column="bold">
                                     <span>Банкротства</span>
                                 </Th>
