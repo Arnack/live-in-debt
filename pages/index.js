@@ -380,6 +380,52 @@ export default function ChartsPage() {
 
                     </CardBody>
                 </Card>
+
+                <div className="container"
+                     style={{
+                         background: "black",
+                         color: "white"
+
+                     }}
+                >
+                    <div className="row">
+                        <div className="col-12 col-md-12 mb-12">
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                        <div className="col-12 col-md-4 mb-4">
+                            <strong>Над проектом работали:</strong>
+                            <p>Виталия Чикнаева @vitalia_chik <br/>
+                            Альбина Замалетдинова @beaal<br/>
+                            Степан Бубнов @Stefs<br/>
+                            Григорий Орлов @utrom_go<br/>
+                            Константин Ворович @vorovich</p>
+
+                        </div>
+                        <div className="col-12 col-md-4 mb-4">
+                            <strong>Проект был запушен во время хакатона «Прожектор-2022»</strong>
+                            <p>За время время хакатона, команда не взяла ни одного кредита.<br/>
+                            Репозитории проекта открыты для контрибьюции:
+                                <a href="https://github.com/Arnack/live-in-debt">live-in-debt</a>
+                            </p>
+                        </div>
+                        <div className="col-12 col-md-4 mb-4">
+                            <strong> Данные, которые мы использовали:</strong>
+                                <ul>
+                                    <li>ЦБ</li>
+                                    <li>Росстат</li>
+                                    <li>Data.gov.ru</li>
+                                    <li>ЕФРСБ</li>
+                                    <li>НБКИ</li>
+                                    <li>EМИСС</li>
+                                    <li>ФССП</li>
+                                </ul>
+
+                        </div>
+                    </div>
+
+                </div>
             </ViewContent>
         </Layout>
     );
