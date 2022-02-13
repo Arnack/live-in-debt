@@ -356,6 +356,15 @@ textarea {
   }
 }
 
+table {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.view-content.view-components {
+  background-color: black;
+}
+
 @import 'site-nav';
 @import 'site-layout';
 @import 'site-head';

@@ -44,15 +44,16 @@ export default function ChartsPage() {
     <Layout>
       <ViewHeader />
       <ViewContent>
-        <Card className="mb-4">
+        <Card>
           <CardBody>
             {/*<h6 className="text-uppercase mb-5">Tiny Charts</h6>*/}
             {/*<TinyCharts />*/}
-          </CardBody>
-        </Card>
         <div className="container">
-          <h3>Кредитная яма, в которую мы проваливаемся</h3>
-          <i>Закредитованность россиян выросла в пятнадцать раз</i>
+          <center>
+            <h3>Кредитная яма, в которую мы проваливаемся</h3>
+            <i>Закредитованность россиян выросла в пятнадцать раз</i>
+
+          </center>
           <br/>
           <br/>
           <br/>
@@ -68,8 +69,14 @@ export default function ChartsPage() {
             </div>
 
             <div className="col-12 col-md-12 mb-12">
-              <h3>Индекс закредитованности регионов</h3>
-              <i>Где и сколько кредитов берут граждане</i>
+              <br/>
+              <br/>
+              <br/>
+              <center>
+
+                <h3>Индекс закредитованности регионов</h3>
+                <i>Где и сколько кредитов берут граждане</i>
+              </center>
             <GeneralTable />
 
               {/*<div className="col-12 col-md-12 mb-12">*/}
@@ -157,6 +164,9 @@ export default function ChartsPage() {
             </div>
           </div>
         </div>
+
+          </CardBody>
+        </Card>
       </ViewContent>
     </Layout>
   );

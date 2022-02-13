@@ -82,3 +82,12 @@
     }
   }
 }
+
+.view .view-header, .site-head {
+  background-color: black !important;
+}
+
+tbody.reactable-data {
+  max-height: 400px;
+  overflow-y: auto;
+}
