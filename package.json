@@ -28,6 +28,7 @@
     "react-notification-system": "^0.4.0",
     "react-range": "^1.8.12",
     "react-select": "^4.3.0",
+    "react-tabs": "^3.2.3",
     "reactable": "^1.1.0",
     "reactstrap": "^8.9.0",
     "recharts": "^2.0.9",

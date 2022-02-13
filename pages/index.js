@@ -21,6 +21,8 @@ import { BancrouptMap } from "../components/bancrouptMAP/BancrouptMap";
 import {OutdatedMortMap} from "../components/outdatedMortgMap/OutdatedMortMap";
 import {IndicatorsFSSPNUM} from "../components/fss/indicatorsFCCP/IndicatorsFSSPNUM";
 import {IndicatorsFSSPAmount} from "../components/fss/indicatorsFCCP/IndicatorsFSSPAmount";
+import {DebtVolNum} from "../components/debtVlolume/debpVolNumWrapper";
+import GeneralTable from "../components/table/generalTable";
 
 const ViewHeader = () => (
   <div className="view-header">
@@ -49,7 +51,33 @@ export default function ChartsPage() {
           </CardBody>
         </Card>
         <div className="container">
+          <h3>Кредитная яма, в которую мы проваливаемся</h3>
+          <i>Закредитованность россиян выросла в пятнадцать раз</i>
+          <br/>
+          <br/>
+          <br/>
           <div className="row">
+            <div className="col-12 col-md-12 mb-12">
+            {/*  Объём долгов / количество кредитов*/}
+            <DebtVolNum />
+
+              {/*<div className="col-12 col-md-12 mb-12">*/}
+              {/*  <MortgageToCitisents />*/}
+                {/*<RadialBarChartExample />*/}
+              {/*</div>*/}
+            </div>
+
+            <div className="col-12 col-md-12 mb-12">
+              <h3>Индекс закредитованности регионов</h3>
+              <i>Где и сколько кредитов берут граждане</i>
+            <GeneralTable />
+
+              {/*<div className="col-12 col-md-12 mb-12">*/}
+              {/*  <MortgageToCitisents />*/}
+                {/*<RadialBarChartExample />*/}
+              {/*</div>*/}
+            </div>
+
             <div className="col-12 col-md-6 mb-6">
               <AvarageInetersMortgageRate />
               {/*<AreaChartExample />*/}
@@ -100,11 +128,6 @@ export default function ChartsPage() {
               ullam voluptatum. A aliquid commodi, dolorum facere facilis
               laudantium obcaecati odio porro possimus.
             </p>
-
-            <div className="col-12 col-md-12 mb-12">
-              <MortgageToCitisents />
-              {/*<RadialBarChartExample />*/}
-            </div>
             <div className="col-12 col-md-6 mb-6">
               <MortgageChart />
               {/*<RadarChartExample />*/}
