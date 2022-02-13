@@ -284,46 +284,46 @@ export default function ChartsPage() {
                                 {/*</div>*/}
 
 
-                                {/*  <center>*/}
-                                {/*    <h1 style={{marginTop: "2200px"}}>Больше интересных графиков для исследователей и аналитиков</h1>*/}
+                                  <center>
+                                    <h1 style={{marginTop: "2200px"}}>Больше интересных графиков для исследователей и аналитиков</h1>
 
-                                {/*  </center>*/}
-
-
-                                {/*  <div className="col-12 col-md-6 mb-6">*/}
-                                {/*    <BancrouptMap />*/}
-                                {/*  </div>*/}
-
-                                {/*  <div className="col-12 col-md-6 mb-6">*/}
-                                {/*    <MortgageNumByRegions />*/}
-                                {/*  </div>*/}
+                                  </center>
 
 
-                                {/*  <div className="col-12 col-md-6 mb-6">*/}
-                                {/*    <OutdatedMortMap />*/}
-                                {/*    /!*<AreaChartExample />*!/*/}
-                                {/*  </div>*/}
+                                  <div className="col-12 col-md-6 mb-6">
+                                    <BancrouptMap />
+                                  </div>
+
+                                  <div className="col-12 col-md-6 mb-6">
+                                    <MortgageNumByRegions />
+                                  </div>
 
 
-                                {/*  <div className="col-12 col-md-6 mb-6">*/}
-                                {/*    <MortgageChart />*/}
-                                {/*    /!*<RadarChartExample />*!/*/}
-                                {/*  </div>*/}
-                                {/*  <div className="col-12 col-md-6 mb-6">*/}
-                                {/*    <KeyRate />*/}
-                                {/*    /!*<RadarChartExample />*!/*/}
-                                {/*  </div>*/}
-                                {/*  <div className="col-12 col-md-6 mb-6">*/}
-                                {/*    <BancBtCourt />*/}
-                                {/*    /!*<RadarChartExample />*!/*/}
-                                {/*  </div>*/}
-                                {/*  <div className="col-12 col-md-6 mb-4">*/}
-                                {/*    <MortgagePercentAmongAllCredits />*/}
-                                {/*    /!*<PieChartExample />*!/*/}
-                                {/*  </div>*/}
-                                {/*  <div className="col-12 col-md-6 mb-4">*/}
-                                {/*    <SqMeterPrise />*/}
-                                {/*  </div>*/}
+                                  <div className="col-12 col-md-6 mb-6">
+                                    <OutdatedMortMap />
+                                    {/*<AreaChartExample />*/}
+                                  </div>
+
+
+                                  <div className="col-12 col-md-6 mb-6">
+                                    <MortgageChart />
+                                    {/*<RadarChartExample />*/}
+                                  </div>
+                                  <div className="col-12 col-md-6 mb-6">
+                                    <KeyRate />
+                                    {/*<RadarChartExample />*/}
+                                  </div>
+                                  <div className="col-12 col-md-6 mb-6">
+                                    <BancBtCourt />
+                                    {/*<RadarChartExample />*/}
+                                  </div>
+                                  <div className="col-12 col-md-6 mb-4">
+                                    <MortgagePercentAmongAllCredits />
+                                    {/*<PieChartExample />*/}
+                                  </div>
+                                  <div className="col-12 col-md-6 mb-4">
+                                    <SqMeterPrise />
+                                  </div>
                             </div>
                         </div>
 
