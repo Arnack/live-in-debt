@@ -31,8 +31,11 @@ import {MortgageGrow} from "../components/mortgage/mortgageGrows";
 const ViewHeader = () => (
   <div className="view-header">
     <header className="text-white">
-      <h1 className="h5 title text-uppercase">Жизнь в кредит</h1>
+      <h1 className="h5 title text-uppercase">Кредитный прожектор</h1>
       <p className="mb-0 subtitle">Исследование закредитованности россиян</p>
+      <title>
+        Кредитный прожектор
+      </title>
 
       {/*<IconFullScreen size="22" color="#fff" onClick={() => screenfull.toggle()} />*/}
     </header>

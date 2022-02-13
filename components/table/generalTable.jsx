@@ -1050,7 +1050,7 @@ export default function GeneralTable() {
                                     <span>Количество кредитов</span>
                                 </Th>
                                 <Th column="baddebt">
-                                    <span>Количество просроченных кредитов</span>
+                                    <span>Количество просроченных ипотек</span>
                                 </Th>
                                 <Th column="bold">
                                     <span>Банкротства</span>
