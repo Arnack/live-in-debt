@@ -1,5 +1,5 @@
-import React from "react";
-import {Card, CardBody} from "reactstrap";
+import React, {useState} from "react";
+import {Card, CardBody, Collapse} from "reactstrap";
 import Layout from "../modules/layout";
 import TinyCharts from "../modules/charts/tinycharts";
 import AreaChartExample from "../modules/charts/areachart";
@@ -30,6 +30,8 @@ import {MortgageGrow} from "../components/mortgage/mortgageGrows";
 import {RadialBarChartExample2} from "../modules/charts/piechart2";
 
 const ViewHeader = () => (
+
+
     <div className="view-header">
         <header className="text-white">
             <h1 className="h5 title text-uppercase">Кредитный прожектор</h1>
@@ -48,6 +50,9 @@ const ViewContent = ({children}) => (
 );
 
 export default function ChartsPage() {
+
+
+    const [isExtraCollapsed, setIsExtraCollapsed] = useState(true);
     return (
         <Layout>
             <ViewHeader/>
@@ -319,47 +324,57 @@ export default function ChartsPage() {
                                 {/*</div>*/}
 
 
-                                  <center>
-                                    <h3 style={{marginTop: "100px"}}>
+                                <center>
+                                    <h4 style={{marginTop: "80px", cursor: "pointer", textAlign: 'center',
+                                    borderRadius: "4px", border: "1px solid lightgray",
+                                    width: "100%", padding: "4px 16px", background: "#f7f6f6"}}
+                                        onClick={() => setIsExtraCollapsed(!isExtraCollapsed)}>
                                         Больше интересных графиков для исследователей и аналитиков
-                                    </h3>
-                                  </center>
+                                    </h4>
+                                </center>
+
+                                <Collapse isOpen={!isExtraCollapsed}  >
+<div className="row">
+                                    <div className="col-12 col-md-6 mb-6">
+                                        <BancrouptMap />
+                                    </div>
+
+                                    <div className="col-12 col-md-6 mb-6">
+                                        <MortgageNumByRegions />
+                                    </div>
 
 
-                                  <div className="col-12 col-md-6 mb-6">
-                                    <BancrouptMap />
-                                  </div>
-
-                                  <div className="col-12 col-md-6 mb-6">
-                                    <MortgageNumByRegions />
-                                  </div>
+                                    <div className="col-12 col-md-6 mb-6">
+                                        <OutdatedMortMap />
+                                        {/*<AreaChartExample />*/}
+                                    </div>
 
 
-                                  <div className="col-12 col-md-6 mb-6">
-                                    <OutdatedMortMap />
-                                    {/*<AreaChartExample />*/}
-                                  </div>
+                                    <div className="col-12 col-md-6 mb-6">
+                                        <MortgageChart />
+                                        {/*<RadarChartExample />*/}
+                                    </div>
+                                    <div className="col-12 col-md-6 mb-6">
+                                        <KeyRate />
+                                        {/*<RadarChartExample />*/}
+                                    </div>
+                                    <div className="col-12 col-md-6 mb-6">
+                                        <BancBtCourt />
+                                        {/*<RadarChartExample />*/}
+                                    </div>
+                                    <div className="col-12 col-md-6 mb-4">
+                                        <MortgagePercentAmongAllCredits />
+                                        {/*<PieChartExample />*/}
+                                    </div>
+                                    <div className="col-12 col-md-6 mb-4">
+                                        <SqMeterPrise />
+                                    </div>
+</div>
+                                </Collapse>
 
 
-                                  <div className="col-12 col-md-6 mb-6">
-                                    <MortgageChart />
-                                    {/*<RadarChartExample />*/}
-                                  </div>
-                                  <div className="col-12 col-md-6 mb-6">
-                                    <KeyRate />
-                                    {/*<RadarChartExample />*/}
-                                  </div>
-                                  <div className="col-12 col-md-6 mb-6">
-                                    <BancBtCourt />
-                                    {/*<RadarChartExample />*/}
-                                  </div>
-                                  <div className="col-12 col-md-6 mb-4">
-                                    <MortgagePercentAmongAllCredits />
-                                    {/*<PieChartExample />*/}
-                                  </div>
-                                  <div className="col-12 col-md-6 mb-4">
-                                    <SqMeterPrise />
-                                  </div>
+
+
                             </div>
                         </div>
 
