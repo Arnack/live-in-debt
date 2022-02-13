@@ -8,7 +8,7 @@ export const IndicatorsFSSPNUM = () => {
     return (
         <>
             <CommonChart
-                label={"Дел о взыскании с физических лиц в пользу кредитных организаций в производстве ФССП"}
+                label={"Количество дел о взыскании с граждан\n в пользу кредитных организаций (ФССП)"}
                 data={data}
                 categories={categories}
             />

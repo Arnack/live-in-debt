@@ -8,7 +8,7 @@ export const TotalCredits = () => {
     return (
         <>
             <CommonChart
-                label={"Общее количество кредитов"}
+                label={"Общая сумма кредитов, млрд. руб."}
                 data={data}
                 categories={categories}
             />

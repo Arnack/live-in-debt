@@ -7,6 +7,7 @@ export const CommonChart = ({ data, categories, label, type }) => {
     chart: {
       type: type || "spline",
     },
+    legend: { enabled:false },
     title: {
       text: label,
     },

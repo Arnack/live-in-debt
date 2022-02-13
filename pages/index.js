@@ -236,57 +236,29 @@ export default function ChartsPage() {
             </div>
 
 
+            <center>
+              <h1 style={{marginTop: "2200px"}}>Больше интересных графиков для исследователей и аналитиков</h1>
 
-          <h1 style={{marginTop: "2200px", textAlign: "center"}}>Гараж</h1>
-            <div className="col-12 col-md-6 mb-6">
-              {/*<AreaChartExample />*/}
-            </div>
-            <div className="col-12 col-md-6 mb-6">
-              <p style={{ maxWidth: "400px" }}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                aspernatur assumenda autem culpa dicta labore laudantium
-                repellat ullam voluptatum. A aliquid commodi, dolorum facere
-                facilis laudantium obcaecati odio porro possimus.
-              </p>
-            </div>
+            </center>
 
-            <div className="col-12 col-md-6 mb-6">
-              <p
-                style={{ maxWidth: "400px", float: "right", marginTop: "40px" }}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                aspernatur assumenda autem culpa dicta labore laudantium
-                repellat ullam voluptatum. A aliquid commodi, dolorum facere
-                facilis laudantium obcaecati odio porro possimus.
-              </p>
-            </div>
+
+
+
             <div className="col-12 col-md-6 mb-6">
               <BancrouptMap />
             </div>
 
             <div className="col-12 col-md-6 mb-6">
               <MortgageNumByRegions />
-              {/*<AreaChartExample />*/}
             </div>
 
-            <p style={{ maxWidth: "400px" }}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-              aspernatur assumenda autem culpa dicta labore laudantium repellat
-              ullam voluptatum. A aliquid commodi, dolorum facere facilis
-              laudantium obcaecati odio porro possimus.
-            </p>
 
             <div className="col-12 col-md-6 mb-6">
               <OutdatedMortMap />
               {/*<AreaChartExample />*/}
             </div>
 
-            <p style={{ maxWidth: "400px", marginTop: '40px' }}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-              aspernatur assumenda autem culpa dicta labore laudantium repellat
-              ullam voluptatum. A aliquid commodi, dolorum facere facilis
-              laudantium obcaecati odio porro possimus.
-            </p>
+
             <div className="col-12 col-md-6 mb-6">
               <MortgageChart />
               {/*<RadarChartExample />*/}
@@ -305,14 +277,6 @@ export default function ChartsPage() {
             </div>
             <div className="col-12 col-md-6 mb-4">
               <SqMeterPrise />
-            </div>
-
-
-            <div className="col-12 col-md-6 mb-4">
-              <IndicatorsFSSPNUM />
-            </div>
-            <div className="col-12 col-md-6 mb-4">
-              <IndicatorsFSSPAmount/>
             </div>
           </div>
         </div>

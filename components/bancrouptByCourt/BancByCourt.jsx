@@ -9,7 +9,7 @@ export const BancBtCourt = () => {
       <CommonChart
         type={"column"}
         label={
-          "Судебное признание гражданина банкротом с реализацией имущества гражданина"
+          "Число граждан признанных банкротами"
         }
         data={data}
         categories={categories}

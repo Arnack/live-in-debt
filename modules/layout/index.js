@@ -24,7 +24,7 @@ export default function Layout(props) {
           name="description"
           content=""
         />
-        <title>Жизнь в кредит</title>
+        <title>Кредитный прожектор</title>
       </Head>
       {/*<Nav mini={navMini} toggleNav={toggleNav} />*/}
       <div className={`content-container ${navMini ? 'full' : ''}`}>
