@@ -199,8 +199,41 @@ export default function ChartsPage() {
               <br/>
               <br/>
             </div>
+            <div className="col-12 col-md-6 mb-6">
+
+              <PieChartExample />
+            </div>
+            <div className="col-12 col-md-6 mb-6">
+              <div>
+                <h4>
+                  Панчлайн
+                </h4>
+                <p>
+                  Объем госпошлины, которую
+                  за день заплатили граждане
+                </p>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 mb-6">
+
+            </div>
+            <div className="col-12 col-md-6 mb-6">
+
+            </div>
 
 
+
+            <div className="col-12 col-md-12 mb-12">
+              <br/>
+              <br/>
+              <br/>
+              <center>
+                <h3>Россияне продолжают искать новые кредиты</h3>
+                <i>Графики данных поиска</i>
+              </center>
+              <br/>
+              <br/>
+            </div>
 
 
 
