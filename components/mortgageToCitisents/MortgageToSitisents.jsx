@@ -13,25 +13,12 @@ const data = [
 ]
 
 export const MortgageToCitisents = () => {
-    const [activeIdx, setActiveIdx] = useState(0);
+    // const [activeIdx, setActiveIdx] = useState(0);
 
     return <>
-        <hr/>
-        <ButtonGroup className="mb-3">
-            {
-                types.map((item, idx) => {
-                    return <Button color={activeIdx === idx ? "info" : ""}
-                                    onClick={() => setActiveIdx(idx)}
-                    >
-                        {item}
-                    </Button>
-                })
-            }
-        </ButtonGroup>
-
-        <CommonChart label={types[activeIdx]}
+        <CommonChart label={types[1]}
                      categories={categories}
-                     data={data[activeIdx]}
+                     data={data[1]}
         />
     </>
 }

@@ -10,7 +10,7 @@ export const OutdatedDebt = () => {
         <>
             <CommonChart
                 type={'column'}
-                label={"Сумма дел о взыскании с физических лиц в пользу кредитных организаций в производстве ФССП"}
+                label={"Количество просроченных кредитов"}
                 data={data}
                 categories={categories}
             />

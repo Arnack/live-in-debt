@@ -25,6 +25,7 @@ import {DebtVolNum} from "../components/debtVlolume/debpVolNumWrapper";
 import GeneralTable from "../components/table/generalTable";
 import {TotalCredits} from "../components/first/TotoalCredits";
 import {OutdatedDebt} from "../components/first/OutdatedDebt";
+import {IdxMortMap} from "../components/mortIdx/mortIdxMap/IdxMortMap";
 
 const ViewHeader = () => (
   <div className="view-header">
@@ -137,19 +138,73 @@ export default function ChartsPage() {
               <br/>
               <center>
 
-                <h3>Индекс закредитованности регионов</h3>
+                <h3>Индекс ипотечной закредитованности регионов</h3>
                 <i>Где и сколько кредитов берут граждане</i>
               </center>
-            <GeneralTable />
-
-              {/*<div className="col-12 col-md-12 mb-12">*/}
-              {/*  <MortgageToCitisents />*/}
-                {/*<RadialBarChartExample />*/}
-              {/*</div>*/}
             </div>
 
+
+              <div className="col-12 col-md-12 mb-12">
+                <IdxMortMap />
+              </div>
+
+              <div className="col-12 col-md-12 mb-12">
+                <GeneralTable />
+              </div>
+              {/*  <MortgageToCitisents />*/}
+                {/*<RadialBarChartExample />*/}
+
+
+
+
+            {/*Ипотеки*/}
+            <div className="col-12 col-md-12 mb-12">
+              <br/>
+              <br/>
+              <br/>
+              <center>
+
+                <h3>Ипотека — главная форма кредита</h3>
+                <i>Россиянам хочется иметь свой дом, даже несмотря на то, что он подорожал в полтора раза за пять лет</i>
+              </center>
+              <br/>
+              <br/>
+            </div>
+
+            <div className="col-12 col-md-4 mb-4">
+              <MortgageToCitisents />
+            </div>
+            <div className="col-12 col-md-4 mb-4">
+
+            </div>
+            <div className="col-12 col-md-4 mb-4">
+              <SqMeterPrise />
+            </div>
+
+
+
+
+
+
+            <div className="col-12 col-md-12 mb-12">
+              <br/>
+              <br/>
+              <br/>
+              <center>
+
+                <h3>Как судят россиян за долги</h3>
+                <i>И сколько на этом зарабатывает государство</i>
+              </center>
+              <br/>
+              <br/>
+            </div>
+
+
+
+
+
+          <h1 style={{marginTop: "1200px"}}>Гараж</h1>
             <div className="col-12 col-md-6 mb-6">
-              <AvarageInetersMortgageRate />
               {/*<AreaChartExample />*/}
             </div>
             <div className="col-12 col-md-6 mb-6">

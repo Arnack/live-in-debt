@@ -8,7 +8,7 @@ export const TotalCredits = () => {
     return (
         <>
             <CommonChart
-                label={"Сумма дел о взыскании с физических лиц в пользу кредитных организаций в производстве ФССП"}
+                label={"Общее количество кредитов"}
                 data={data}
                 categories={categories}
             />
