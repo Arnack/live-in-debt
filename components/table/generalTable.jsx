@@ -4,1028 +4,746 @@ import { Table, Th, Thead } from 'reactable';
 
 
 const revenueTableData =
-[
-    {
-        "reg": "Алтайский край",
-        "number": 41415,
-        "volume": 83398,
-        "interest": "7,62",
-        "debt": 1706197,
-        "baddebt": 14926,
-        "bold": 2291,
-        "population": 2296353,
-        "salary": 32299,
-        "Region": "ru-al"
-    },
-    {
-        "reg": "Амурская область",
-        "number": 10731,
-        "volume": 41216,
-        "interest": "6,48",
-        "debt": 807122,
-        "baddebt": 6176,
-        "bold": 1172,
-        "population": 781846,
-        "salary": 57547,
-        "Region": "ru-am"
-    },
-    {
-        "reg": "Архангельская область",
-        "number": 22356,
-        "volume": 59556,
-        "interest": "7,55",
-        "debt": 1349984,
-        "baddebt": 5952,
-        "bold": 1318,
-        "population": 1082662,
-        "salary": 58115,
-        "Region": "ru-ar"
-    },
-    {
-        "reg": "Астраханская область",
-        "number": 12323,
-        "volume": 33056,
-        "interest": "7,5",
-        "debt": 698366,
-        "baddebt": 9498,
-        "bold": 1275,
-        "population": 997778,
-        "salary": 39794,
-        "Region": "ru-as"
-    },
-    {
-        "reg": "Белгородская область",
-        "number": 19063,
-        "volume": 50033,
-        "interest": "7,41",
-        "debt": 1007872,
-        "baddebt": 7016,
-        "bold": 3448,
-        "population": 1541259,
-        "salary": 40322,
-        "Region": "ru-bl"
-    },
-    {
-        "reg": "Брянская область",
-        "number": 15292,
-        "volume": 40351,
-        "interest": "7,27",
-        "debt": 846030,
-        "baddebt": 4686,
-        "bold": 1624,
-        "population": 1182682,
-        "salary": 35233,
-        "Region": "ru-br"
-    },
-    {
-        "reg": "в том числе Ненецкий автономный округ",
-        "number": 712,
-        "volume": 2273,
-        "interest": "7,64",
-        "debt": 64462,
-        "baddebt": 238,
-        "bold": 1,
-        "population": 1342099,
-        "salary": 92484,
-        "Region": "ru-nn"
-    },
-    {
-        "reg": "в том числе Ханты-Мансийский\nавтономный округ – Югра",
-        "number": 42102,
-        "volume": 152878,
-        "interest": "7,69",
-        "debt": 3748819,
-        "baddebt": 33124,
-        "bold": 2297,
-        "population": 2474556,
-        "salary": 37154,
-        "Region": "ru-km"
-    },
-    {
-        "reg": "в том числе Ямало-Ненецкий\nавтономный округ",
-        "number": 22164,
-        "volume": 59370,
-        "interest": "7,7",
-        "debt": 1392477,
-        "baddebt": 16970,
-        "bold": 485,
-        "population": 1151042,
-        "salary": 37268,
-        "Region": "ru-yn"
-    },
-    {
-        "reg": "Владимирская область",
-        "number": 19977,
-        "volume": 50144,
-        "interest": "7,58",
-        "debt": 1011908,
-        "baddebt": 11872,
-        "bold": 1409,
-        "population": 2305608,
-        "salary": 44311,
-        "Region": "ru-vl"
-    },
-    {
-        "reg": "Волгоградская область",
-        "number": 32679,
-        "volume": 80109,
-        "interest": "7,5",
-        "debt": 1656738,
-        "baddebt": 19282,
-        "bold": 5060,
-        "population": 12655050,
-        "salary": 40105,
-        "Region": "ru-vg"
-    },
-    {
-        "reg": "Вологодская область",
-        "number": 21559,
-        "volume": 48848,
-        "interest": "7,64",
-        "debt": 1004303,
-        "baddebt": 9034,
-        "bold": 2294,
-        "population": 5384342,
-        "salary": 104877,
-        "Region": "ru-vo"
-    },
-    {
-        "reg": "Воронежская область",
-        "number": 38540,
-        "volume": 92747,
-        "interest": "7,32",
-        "debt": 1881740,
-        "baddebt": 30742,
-        "bold": 1872,
-        "population": 509992,
-        "salary": 73944,
-        "Region": "ru-vr"
-    },
-    {
-        "reg": "г. Москва",
-        "number": 189174,
-        "volume": 1257689,
-        "interest": "7,65",
-        "debt": 22866762,
-        "baddebt": 324006,
-        "bold": 10213,
-        "population": 156500,
-        "salary": 38047,
-        "Region": "ru-ms"
-    },
-    {
-        "reg": "г. Санкт-Петербург",
-        "number": 121441,
-        "volume": 530898,
-        "interest": "7,29",
-        "debt": 10828864,
-        "baddebt": 84910,
-        "bold": 8185,
-        "population": 1053485,
-        "salary": 48891,
-        "Region": "ru-sp"
-    },
-    {
-        "reg": "г. Севастополь",
-        "number": 3215,
-        "volume": 10929,
-        "interest": "8,12",
-        "debt": 174830,
-        "baddebt": 514,
-        "bold": 185,
-        "population": 987032,
-        "salary": 47554,
-        "Region": "ru-sc"
-    },
-    {
-        "reg": "Еврейская автономная область",
-        "number": 1688,
-        "volume": 4563,
-        "interest": "7,01",
-        "debt": 100097,
-        "baddebt": 1644,
-        "bold": 140,
-        "population": 2375021,
-        "salary": 30724,
-        "Region": "ru-yv"
-    },
-    {
-        "reg": "Забайкальский край",
-        "number": 12433,
-        "volume": 40812,
-        "interest": "6,86",
-        "debt": 798773,
-        "baddebt": 10728,
-        "bold": 863,
-        "population": 869191,
-        "salary": 51888,
-        "Region": "ru-ct"
-    },
-    {
-        "reg": "Ивановская область",
-        "number": 11800,
-        "volume": 28745,
-        "interest": "7,62",
-        "debt": 583041,
-        "baddebt": 7842,
-        "bold": 2065,
-        "population": 1018624,
-        "salary": 30500,
-        "Region": "ru-iv"
-    },
-    {
-        "reg": "Иркутская область",
-        "number": 37207,
-        "volume": 98279,
-        "interest": "7,86",
-        "debt": 2107579,
-        "baddebt": 31578,
-        "bold": 2565,
-        "population": 1000980,
-        "salary": 40119,
-        "Region": "ru-ir"
-    },
-    {
-        "reg": "Кабардино-Балкарская Республика",
-        "number": 5674,
-        "volume": 14538,
-        "interest": "7,41",
-        "debt": 328086,
-        "baddebt": 5800,
-        "bold": 490,
-        "population": 311667,
-        "salary": 47383,
-        "Region": "ru-kb"
-    },
-    {
-        "reg": "Калининградская область",
-        "number": 17460,
-        "volume": 47735,
-        "interest": "7,36",
-        "debt": 1003531,
-        "baddebt": 45368,
-        "bold": 1897,
-        "population": 465357,
-        "salary": 88379,
-        "Region": "ru-kn"
-    },
-    {
-        "reg": "Калужская область",
-        "number": 18124,
-        "volume": 54447,
-        "interest": "7,51",
-        "debt": 1177052,
-        "baddebt": 14690,
-        "bold": 2099,
-        "population": 1250173,
-        "salary": 31128,
-        "Region": "ru-kg"
-    },
-    {
-        "reg": "Камчатский край",
-        "number": 12089,
-        "volume": 20875,
-        "interest": "7,72",
-        "debt": 395543,
-        "baddebt": 2648,
-        "bold": 345,
-        "population": 628423,
-        "salary": 47200,
-        "Region": "ru-ka"
-    },
-    {
-        "reg": "Карачаево-Черкесская Республика",
-        "number": 4340,
-        "volume": 10795,
-        "interest": "7,44",
-        "debt": 196520,
-        "baddebt": 11680,
-        "bold": 281,
-        "population": 5683947,
-        "salary": 34972,
-        "Region": "ru-kc"
-    },
-    {
-        "reg": "Кемеровская область",
-        "number": 48062,
-        "volume": 94941,
-        "interest": "7,77",
-        "debt": 1936345,
-        "baddebt": 19014,
-        "bold": 2304,
-        "population": 2855899,
-        "salary": 34054,
-        "Region": "ru-ke"
-    },
-    {
-        "reg": "Кировская область",
-        "number": 27461,
-        "volume": 46154,
-        "interest": "7,61",
-        "debt": 1048615,
-        "baddebt": 8156,
-        "bold": 1002,
-        "population": 818570,
-        "salary": 39682,
-        "Region": "ru-kv"
-    },
-    {
-        "reg": "Костромская область",
-        "number": 9457,
-        "volume": 21496,
-        "interest": "7,52",
-        "debt": 437521,
-        "baddebt": 2858,
-        "bold": 739,
-        "population": 1096488,
-        "salary": 58072,
-        "Region": "ru-kt"
-    },
-    {
-        "reg": "Краснодарский край",
-        "number": 79355,
-        "volume": 229024,
-        "interest": "7,73",
-        "debt": 4740579,
-        "baddebt": 68558,
-        "bold": 9757,
-        "population": 1892711,
-        "salary": 34314,
-        "Region": "ru-kd"
-    },
-    {
-        "reg": "Красноярский край",
-        "number": 49100,
-        "volume": 153841,
-        "interest": "7,73",
-        "debt": 3202329,
-        "baddebt": 55108,
-        "bold": 1878,
-        "population": 1128192,
-        "salary": 39463,
-        "Region": "ru-ky"
-    },
-    {
-        "reg": "Курганская область",
-        "number": 29837,
-        "volume": 29120,
-        "interest": "7,5",
-        "debt": 594393,
-        "baddebt": 4826,
-        "bold": 1224,
-        "population": 139034,
-        "salary": 51961,
-        "Region": "ru-ku"
-    },
-    {
-        "reg": "Курская область",
-        "number": 14088,
-        "volume": 36755,
-        "interest": "7,37",
-        "debt": 748402,
-        "baddebt": 6018,
-        "bold": 1586,
-        "population": 7708499,
-        "salary": 39373,
-        "Region": "ru-ks"
-    },
-    {
-        "reg": "Ленинградская область",
-        "number": 33433,
-        "volume": 119043,
-        "interest": "7,3",
-        "debt": 2654249,
-        "baddebt": 20442,
-        "bold": 894,
-        "population": 732864,
-        "salary": 100123,
-        "Region": "ru-ln"
-    },
-    {
-        "reg": "Липецкая область",
-        "number": 15177,
-        "volume": 38270,
-        "interest": "7,37",
-        "debt": 793895,
-        "baddebt": 6334,
-        "bold": 1977,
-        "population": 44389,
-        "salary": 62274,
-        "Region": "ru-lp"
-    },
-    {
-        "reg": "Магаданская область",
-        "number": 5188,
-        "volume": 13492,
-        "interest": "6,19",
-        "debt": 252463,
-        "baddebt": 1588,
-        "bold": 127,
-        "population": 3176552,
-        "salary": 73502,
-        "Region": "ru-mg"
-    },
-    {
-        "reg": "Московская область",
-        "number": 140030,
-        "volume": 657945,
-        "interest": "7,59",
-        "debt": 13737958,
-        "baddebt": 189488,
-        "bold": 10045,
-        "population": 592415,
-        "salary": 40163,
-        "Region": "ru-2509"
-    },
-    {
-        "reg": "Мурманская область",
-        "number": 13133,
-        "volume": 39417,
-        "interest": "7,46",
-        "debt": 823453,
-        "baddebt": 5640,
-        "bold": 670,
-        "population": 2785836,
-        "salary": 39539,
-        "Region": "ru-mm"
-    },
-    {
-        "reg": "Нижегородская область",
-        "number": 43358,
-        "volume": 125854,
-        "interest": "7,56",
-        "debt": 2544495,
-        "baddebt": 25286,
-        "bold": 4323,
-        "population": 1903675,
-        "salary": 44640,
-        "Region": "ru-nz"
-    },
-    {
-        "reg": "Новгородская область",
-        "number": 8407,
-        "volume": 20668,
-        "interest": "7,41",
-        "debt": 459855,
-        "baddebt": 2982,
-        "bold": 495,
-        "population": 1942915,
-        "salary": 39170,
-        "Region": "ru-ng"
-    },
-    {
-        "reg": "Новосибирская область",
-        "number": 55367,
-        "volume": 189572,
-        "interest": "7,49",
-        "debt": 3638991,
-        "baddebt": 40480,
-        "bold": 4918,
-        "population": 724686,
-        "salary": 36958,
-        "Region": "ru-ns"
-    },
-    {
-        "reg": "Омская область",
-        "number": 28672,
-        "volume": 78556,
-        "interest": "7,77",
-        "debt": 1524807,
-        "baddebt": 13148,
-        "bold": 3528,
-        "population": 1290898,
-        "salary": 34278,
-        "Region": "ru-om"
-    },
-    {
-        "reg": "Оренбургская область",
-        "number": 36464,
-        "volume": 80400,
-        "interest": "7,58",
-        "debt": 1712183,
-        "baddebt": 15182,
-        "bold": 2982,
-        "population": 2579261,
-        "salary": 35247,
-        "Region": "ru-ob"
-    },
-    {
-        "reg": "Орловская область",
-        "number": 11450,
-        "volume": 28616,
-        "interest": "7,38",
-        "debt": 597326,
-        "baddebt": 3654,
-        "bold": 610,
-        "population": 1877844,
-        "salary": 43842,
-        "Region": "ru-ol"
-    },
-    {
-        "reg": "Пензенская область",
-        "number": 24977,
-        "volume": 55555,
-        "interest": "7,03",
-        "debt": 1062109,
-        "baddebt": 7360,
-        "bold": 3000,
-        "population": 620249,
-        "salary": 53868,
-        "Region": "ru-pz"
-    },
-    {
-        "reg": "Пермский край",
-        "number": 45571,
-        "volume": 121246,
-        "interest": "7,57",
-        "debt": 2534784,
-        "baddebt": 34772,
-        "bold": 3222,
-        "population": 463167,
-        "salary": 34367,
-        "Region": "ru-pe"
-    },
-    {
-        "reg": "Приморский край",
-        "number": 29460,
-        "volume": 124440,
-        "interest": "6,12",
-        "debt": 2037992,
-        "baddebt": 14194,
-        "bold": 2323,
-        "population": 220954,
-        "salary": 34186,
-        "Region": "ru-pr"
-    },
-    {
-        "reg": "Псковская область",
-        "number": 8118,
-        "volume": 19003,
-        "interest": "7,29",
-        "debt": 429550,
-        "baddebt": 4094,
-        "bold": 808,
-        "population": 4013786,
-        "salary": 36666,
-        "Region": "ru-ps"
-    },
-    {
-        "reg": "Республика Адыгея (Адыгея)",
-        "number": 4065,
-        "volume": 10380,
-        "interest": "7,53",
-        "debt": 242247,
-        "baddebt": 5258,
-        "bold": 722,
-        "population": 985431,
-        "salary": 40709,
-        "Region": "ru-ad"
-    },
-    {
-        "reg": "Республика Алтай",
-        "number": 1777,
-        "volume": 3794,
-        "interest": "7,63",
-        "debt": 79754,
-        "baddebt": 2404,
-        "bold": 201,
-        "population": 3133303,
-        "salary": 43386,
-        "Region": "ru-ga"
-    },
-    {
-        "reg": "Республика Башкортостан",
-        "number": 69881,
-        "volume": 200632,
-        "interest": "7,62",
-        "debt": 4188332,
-        "baddebt": 37896,
-        "bold": 7477,
-        "population": 515564,
-        "salary": 30708,
-        "Region": "ru-bk"
-    },
-    {
-        "reg": "Республика Бурятия",
-        "number": 14373,
-        "volume": 34818,
-        "interest": "6,78",
-        "debt": 692344,
-        "baddebt": 10408,
-        "bold": 1039,
-        "population": 269984,
-        "salary": 30479,
-        "Region": "ru-mg"
-    },
-    {
-        "reg": "Республика Дагестан",
-        "number": 10057,
-        "volume": 34265,
-        "interest": "7,6",
-        "debt": 597037,
-        "baddebt": 11818,
-        "bold": 579,
-        "population": 609071,
-        "salary": 32313,
-        "Region": "ru-da"
-    },
-    {
-        "reg": "Республика Ингушетия",
-        "number": 1771,
-        "volume": 2009,
-        "interest": "8,32",
-        "debt": 32345,
-        "baddebt": 860,
-        "bold": 122,
-        "population": 813590,
-        "salary": 47699,
-        "Region": "ru-in"
-    },
-    {
-        "reg": "Республика Калмыкия",
-        "number": 4195,
-        "volume": 14003,
-        "interest": "7,39",
-        "debt": 296747,
-        "baddebt": 3040,
-        "bold": 597,
-        "population": 1901578,
-        "salary": 56516,
-        "Region": "ru-kl"
-    },
-    {
-        "reg": "Республика Карелия",
-        "number": 10181,
-        "volume": 26352,
-        "interest": "7,43",
-        "debt": 620373,
-        "baddebt": 3162,
-        "bold": 760,
-        "population": 675332,
-        "salary": 37480,
-        "Region": "ru-ki"
-    },
-    {
-        "reg": "Республика Коми",
-        "number": 16141,
-        "volume": 41927,
-        "interest": "7,6",
-        "debt": 1021440,
-        "baddebt": 6766,
-        "bold": 825,
-        "population": 778965,
-        "salary": 33920,
-        "Region": "ru-ko"
-    },
-    {
-        "reg": "Республика Крым",
-        "number": 10962,
-        "volume": 31326,
-        "interest": "7,95",
-        "debt": 479260,
-        "baddebt": 1400,
-        "bold": 472,
-        "population": 981971,
-        "salary": 33693,
-        "Region": "ru-kr"
-    },
-    {
-        "reg": "Республика Марий Эл",
-        "number": 11319,
-        "volume": 22507,
-        "interest": "7,34",
-        "debt": 510686,
-        "baddebt": 3444,
-        "bold": 573,
-        "population": 693098,
-        "salary": 78782,
-        "Region": "ru-me"
-    },
-    {
-        "reg": "Республика Мордовия",
-        "number": 22693,
-        "volume": 27556,
-        "interest": "7,12",
-        "debt": 616895,
-        "baddebt": 3066,
-        "bold": 1006,
-        "population": 3894120,
-        "salary": 30820,
-        "Region": "ru-mr"
-    },
-    {
-        "reg": "Республика Саха (Якутия)",
-        "number": 18960,
-        "volume": 82769,
-        "interest": "6,27",
-        "debt": 1877997,
-        "baddebt": 21566,
-        "bold": 1276,
-        "population": 330368,
-        "salary": 44212,
-        "Region": "ru-ck"
-    },
-    {
-        "reg": "Республика Северная Осетия – Алания",
-        "number": 6195,
-        "volume": 16448,
-        "interest": "7,36",
-        "debt": 353596,
-        "baddebt": 14644,
-        "bold": 808,
-        "population": 532036,
-        "salary": 44244,
-        "Region": "ru-no"
-    },
-    {
-        "reg": "Республика Татарстан (Татарстан)",
-        "number": 75417,
-        "volume": 226481,
-        "interest": "7,39",
-        "debt": 4376467,
-        "baddebt": 35716,
-        "bold": 4970,
-        "population": 4181486,
-        "salary": 46241,
-        "Region": "ru-tt"
-    },
-    {
-        "reg": "Республика Тыва",
-        "number": 4080,
-        "volume": 10620,
-        "interest": "8,08",
-        "debt": 232969,
-        "baddebt": 3370,
-        "bold": 140,
-        "population": 1098257,
-        "salary": 38544,
-        "Region": "ru-tu"
-    },
-    {
-        "reg": "Республика Хакасия",
-        "number": 13995,
-        "volume": 18862,
-        "interest": "7,54",
-        "debt": 398230,
-        "baddebt": 3912,
-        "bold": 477,
-        "population": 3154164,
-        "salary": 39582,
-        "Region": "ru-kk"
-    },
-    {
-        "reg": "Ростовская область",
-        "number": 61059,
-        "volume": 154265,
-        "interest": "7,49",
-        "debt": 3320176,
-        "baddebt": 41310,
-        "bold": 5989,
-        "population": 2395111,
-        "salary": 41675,
-        "Region": "ru-ro"
-    },
-    {
-        "reg": "Рязанская область",
-        "number": 19169,
-        "volume": 47810,
-        "interest": "7,37",
-        "debt": 1097583,
-        "baddebt": 8178,
-        "bold": 1316,
-        "population": 485621,
-        "salary": 36636,
-        "Region": "ru-rz"
-    },
-    {
-        "reg": "Самарская область",
-        "number": 45919,
-        "volume": 115621,
-        "interest": "7,78",
-        "debt": 2527723,
-        "baddebt": 33916,
-        "bold": 7946,
-        "population": 4290067,
-        "salary": 91886,
-        "Region": "ru-sa"
-    },
-    {
-        "reg": "Саратовская область",
-        "number": 32671,
-        "volume": 79043,
-        "interest": "7,72",
-        "debt": 1675862,
-        "baddebt": 20892,
-        "bold": 4631,
-        "population": 921127,
-        "salary": 47862,
-        "Region": "ru-sr"
-    },
-    {
-        "reg": "Сахалинская область",
-        "number": 7248,
-        "volume": 39669,
-        "interest": "6,38",
-        "debt": 744282,
-        "baddebt": 4432,
-        "bold": 331,
-        "population": 2792796,
-        "salary": 35323,
-        "Region": "ru-sl"
-    },
-    {
-        "reg": "Свердловская область",
-        "number": 87844,
-        "volume": 226743,
-        "interest": "7,56",
-        "debt": 4746759,
-        "baddebt": 51220,
-        "bold": 7895,
-        "population": 994420,
-        "salary": 36151,
-        "Region": "ru-sv"
-    },
-    {
-        "reg": "Смоленская область",
-        "number": 12976,
-        "volume": 32532,
-        "interest": "7,45",
-        "debt": 734571,
-        "baddebt": 9898,
-        "bold": 866,
-        "population": 1245619,
-        "salary": 33097,
-        "Region": "ru-sm"
-    },
-    {
-        "reg": "Ставропольский край",
-        "number": 31946,
-        "volume": 81888,
-        "interest": "7,5",
-        "debt": 1693367,
-        "baddebt": 27418,
-        "bold": 3916,
-        "population": 1070339,
-        "salary": 39498,
-        "Region": "ru-st"
-    },
-    {
-        "reg": "Тамбовская область",
-        "number": 11838,
-        "volume": 29966,
-        "interest": "7,47",
-        "debt": 660904,
-        "baddebt": 4292,
-        "bold": 1080,
-        "population": 1449115,
-        "salary": 48320,
-        "Region": "ru-tb"
-    },
-    {
-        "reg": "Тверская область",
-        "number": 19234,
-        "volume": 51766,
-        "interest": "7,64",
-        "debt": 1152083,
-        "baddebt": 10080,
-        "bold": 1388,
-        "population": 3778053,
-        "salary": 43241,
-        "Region": "ru-tv"
-    },
-    {
-        "reg": "Томская область",
-        "number": 15638,
-        "volume": 42178,
-        "interest": "7,64",
-        "debt": 904183,
-        "baddebt": 5982,
-        "bold": 1379,
-        "population": 1543389,
-        "salary": 80796,
-        "Region": "ru-to"
-    },
-    {
-        "reg": "Тульская область",
-        "number": 21274,
-        "volume": 62637,
-        "interest": "7,6",
-        "debt": 1274050,
-        "baddebt": 9044,
-        "bold": 2796,
-        "population": 1493356,
-        "salary": 37395,
-        "Region": "ru-tl"
-    },
-    {
-        "reg": "Тюменская область",
-        "number": 90641,
-        "volume": 320517,
-        "interest": "7,57",
-        "debt": 7246079,
-        "baddebt": 62910,
-        "bold": 2535,
-        "population": 1218319,
-        "salary": 35185,
-        "Region": "ru-ty"
-    },
-    {
-        "reg": "Удмуртская Республика",
-        "number": 33532,
-        "volume": 78565,
-        "interest": "7,14",
-        "debt": 1615146,
-        "baddebt": 10502,
-        "bold": 2157,
-        "population": 1301127,
-        "salary": 58498,
-        "Region": "ru-ud"
-    },
-    {
-        "reg": "Ульяновская область",
-        "number": 19530,
-        "volume": 45848,
-        "interest": "7,47",
-        "debt": 988000,
-        "baddebt": 7264,
-        "bold": 3142,
-        "population": 1687654,
-        "salary": 80614,
-        "Region": "ru-ul"
-    },
-    {
-        "reg": "Хабаровский край",
-        "number": 21101,
-        "volume": 82683,
-        "interest": "6,93",
-        "debt": 1579273,
-        "baddebt": 13318,
-        "bold": 2038,
-        "population": 3442810,
-        "salary": 43001,
-        "Region": "ru-kh"
-    },
-    {
-        "reg": "Челябинская область",
-        "number": 55838,
-        "volume": 134665,
-        "interest": "7,65",
-        "debt": 2675036,
-        "baddebt": 36848,
-        "bold": 5916,
-        "population": 1497992,
-        "salary": 29712,
-        "Region": "ru-cl"
-    },
-    {
-        "reg": "Чеченская Республика",
-        "number": 12892,
-        "volume": 14003,
-        "interest": "8,21",
-        "debt": 148865,
-        "baddebt": 5730,
-        "bold": 158,
-        "population": 1207875,
-        "salary": 34408,
-        "Region": "ru-cn"
-    },
-    {
-        "reg": "Чувашская Республика – Чувашия",
-        "number": 29809,
-        "volume": 63765,
-        "interest": "7,2",
-        "debt": 1391455,
-        "baddebt": 9584,
-        "bold": 1330,
-        "population": 49527,
-        "salary": 124340,
-        "Region": "ru-cv"
-    },
-    {
-        "reg": "Чукотский автономный округ",
-        "number": 868,
-        "volume": 4173,
-        "interest": "6,34",
-        "debt": 84539,
-        "baddebt": 236,
-        "bold": 17,
-        "population": 547010,
-        "salary": 109693,
-        "Region": "ru-2485"
-    },
-    {
-        "reg": "Ярославская область",
-        "number": 18256,
-        "volume": 43850,
-        "interest": "7,53",
-        "debt": 904391,
-        "baddebt": 13060,
-        "bold": 1690,
-        "population": 1241424,
-        "salary": 40954,
-        "Region": "ru-ys"
-    }
-]
+    [
+        {
+            "Region": "Алтайский край",
+            "Ipotecs": 41415,
+            "Money": 83398000000,
+            "Dolgi": 1706197,
+            "Dengi_Dengi": 14926,
+            "Ipotek_voluem": 36317.58706,
+            "Ipotek_per_chelovek": 18.03511917
+        },
+        {
+            "Region": "Амурская область",
+            "Ipotecs": 10731,
+            "Money": 41216000000,
+            "Dolgi": 807122,
+            "Dengi_Dengi": 6176,
+            "Ipotek_voluem": 52716.26382,
+            "Ipotek_per_chelovek": 13.72520931
+        },
+        {
+            "Region": "Архангельская область",
+            "Ipotecs": 22356,
+            "Money": 59556000000,
+            "Dolgi": 1349984,
+            "Dengi_Dengi": 5952,
+            "Ipotek_voluem": 55008.8578,
+            "Ipotek_per_chelovek": 20.64910378
+        },
+        {
+            "Region": "Астраханская область",
+            "Ipotecs": 12323,
+            "Money": 33056000000,
+            "Dolgi": 698366,
+            "Dengi_Dengi": 9498,
+            "Ipotek_voluem": 33129.614,
+            "Ipotek_per_chelovek": 12.35044268
+        },
+        {
+            "Region": "Белгородская область",
+            "Ipotecs": 19063,
+            "Money": 50033000000,
+            "Dolgi": 1007872,
+            "Dengi_Dengi": 7016,
+            "Ipotek_voluem": 32462.42196,
+            "Ipotek_per_chelovek": 12.36845981
+        },
+        {
+            "Region": "Брянская область",
+            "Ipotecs": 15292,
+            "Money": 40351000000,
+            "Dolgi": 846030,
+            "Dengi_Dengi": 4686,
+            "Ipotek_voluem": 34118.21605,
+            "Ipotek_per_chelovek": 12.92993383
+        },
+        {
+            "Region": "Владимирская область",
+            "Ipotecs": 19977,
+            "Money": 50144000000,
+            "Dolgi": 1011908,
+            "Dengi_Dengi": 11872,
+            "Ipotek_voluem": 21748.7101,
+            "Ipotek_per_chelovek": 8.6645258
+        },
+        {
+            "Region": "Волгоградская область",
+            "Ipotecs": 32679,
+            "Money": 80109000000,
+            "Dolgi": 1656738,
+            "Dengi_Dengi": 19282,
+            "Ipotek_voluem": 6330.200197,
+            "Ipotek_per_chelovek": 2.582289284
+        },
+        {
+            "Region": "Вологодская область",
+            "Ipotecs": 21559,
+            "Money": 48848000000,
+            "Dolgi": 1004303,
+            "Dengi_Dengi": 9034,
+            "Ipotek_voluem": 9072.232039,
+            "Ipotek_per_chelovek": 4.004017575
+        },
+        {
+            "Region": "Воронежская область",
+            "Ipotecs": 38540,
+            "Money": 92747000000,
+            "Dolgi": 1881740,
+            "Dengi_Dengi": 30742,
+            "Ipotek_voluem": 181859.7154,
+            "Ipotek_per_chelovek": 75.56981286
+        },
+        {
+            "Region": "г. Москва",
+            "Ipotecs": 189174,
+            "Money": 1257689000000,
+            "Dolgi": 22866762,
+            "Dengi_Dengi": 324006,
+            "Ipotek_voluem": 8036351.438,
+            "Ipotek_per_chelovek": 1208.779553
+        },
+        {
+            "Region": "г. Санкт-Петербург",
+            "Ipotecs": 121441,
+            "Money": 530898000000,
+            "Dolgi": 10828864,
+            "Dengi_Dengi": 84910,
+            "Ipotek_voluem": 503944.527,
+            "Ipotek_per_chelovek": 115.2754904
+        },
+        {
+            "Region": "г. Севастополь",
+            "Ipotecs": 3215,
+            "Money": 10929000000,
+            "Dolgi": 174830,
+            "Dengi_Dengi": 514,
+            "Ipotek_voluem": 11072.58934,
+            "Ipotek_per_chelovek": 3.257239887
+        },
+        {
+            "Region": "Еврейская автономная область",
+            "Ipotecs": 1688,
+            "Money": 4563000000,
+            "Dolgi": 100097,
+            "Dengi_Dengi": 1644,
+            "Ipotek_voluem": 1921.24617,
+            "Ipotek_per_chelovek": 0.7107305578
+        },
+        {
+            "Region": "Забайкальский край",
+            "Ipotecs": 12433,
+            "Money": 40812000000,
+            "Dolgi": 798773,
+            "Dengi_Dengi": 10728,
+            "Ipotek_voluem": 46954.00666,
+            "Ipotek_per_chelovek": 14.30410577
+        },
+        {
+            "Region": "Ивановская область",
+            "Ipotecs": 11800,
+            "Money": 28745000000,
+            "Dolgi": 583041,
+            "Dengi_Dengi": 7842,
+            "Ipotek_voluem": 28219.44113,
+            "Ipotek_per_chelovek": 11.58425484
+        },
+        {
+            "Region": "Иркутская область",
+            "Ipotecs": 37207,
+            "Money": 98279000000,
+            "Dolgi": 2107579,
+            "Dengi_Dengi": 31578,
+            "Ipotek_voluem": 98182.78087,
+            "Ipotek_per_chelovek": 37.17057284
+        },
+        {
+            "Region": "Кабардино-Балкарская Республика",
+            "Ipotecs": 5674,
+            "Money": 14538000000,
+            "Dolgi": 328086,
+            "Dengi_Dengi": 5800,
+            "Ipotek_voluem": 46645.93942,
+            "Ipotek_per_chelovek": 18.20532812
+        },
+        {
+            "Region": "Калининградская область",
+            "Ipotecs": 17460,
+            "Money": 47735000000,
+            "Dolgi": 1003531,
+            "Dengi_Dengi": 45368,
+            "Ipotek_voluem": 102577.1612,
+            "Ipotek_per_chelovek": 37.51958174
+        },
+        {
+            "Region": "Калужская область",
+            "Ipotecs": 18124,
+            "Money": 54447000000,
+            "Dolgi": 1177052,
+            "Dengi_Dengi": 14690,
+            "Ipotek_voluem": 43551.57246,
+            "Ipotek_per_chelovek": 14.49719359
+        },
+        {
+            "Region": "Камчатский край",
+            "Ipotecs": 12089,
+            "Money": 20875000000,
+            "Dolgi": 395543,
+            "Dengi_Dengi": 2648,
+            "Ipotek_voluem": 33218.07127,
+            "Ipotek_per_chelovek": 19.23704257
+        },
+        {
+            "Region": "Карачаево-Черкесская Республика",
+            "Ipotecs": 4340,
+            "Money": 10795000000,
+            "Dolgi": 196520,
+            "Dengi_Dengi": 11680,
+            "Ipotek_voluem": 1899.20842,
+            "Ipotek_per_chelovek": 0.7635539177
+        },
+        {
+            "Region": "Кемеровская область",
+            "Ipotecs": 48062,
+            "Money": 94941000000,
+            "Dolgi": 1936345,
+            "Dengi_Dengi": 19014,
+            "Ipotek_voluem": 33243.8227,
+            "Ipotek_per_chelovek": 16.82902652
+        },
+        {
+            "Region": "Кировская область",
+            "Ipotecs": 27461,
+            "Money": 46154000000,
+            "Dolgi": 1048615,
+            "Dengi_Dengi": 8156,
+            "Ipotek_voluem": 56383.69351,
+            "Ipotek_per_chelovek": 33.54752801
+        },
+        {
+            "Region": "Костромская область",
+            "Ipotecs": 9457,
+            "Money": 21496000000,
+            "Dolgi": 437521,
+            "Dengi_Dengi": 2858,
+            "Ipotek_voluem": 19604.40972,
+            "Ipotek_per_chelovek": 8.624809391
+        },
+        {
+            "Region": "Краснодарский край",
+            "Ipotecs": 79355,
+            "Money": 229024000000,
+            "Dolgi": 4740579,
+            "Dengi_Dengi": 68558,
+            "Ipotek_voluem": 121003.1537,
+            "Ipotek_per_chelovek": 41.92663328
+        },
+        {
+            "Region": "Красноярский край",
+            "Ipotecs": 49100,
+            "Money": 153841000000,
+            "Dolgi": 3202329,
+            "Dengi_Dengi": 55108,
+            "Ipotek_voluem": 136360.6549,
+            "Ipotek_per_chelovek": 43.52096097
+        },
+        {
+            "Region": "Курганская область",
+            "Ipotecs": 29837,
+            "Money": 29120000000,
+            "Dolgi": 594393,
+            "Dengi_Dengi": 4826,
+            "Ipotek_voluem": 209445.1717,
+            "Ipotek_per_chelovek": 214.6021836
+        },
+        {
+            "Region": "Курская область",
+            "Ipotecs": 14088,
+            "Money": 36755000000,
+            "Dolgi": 748402,
+            "Dengi_Dengi": 6018,
+            "Ipotek_voluem": 4768.11374,
+            "Ipotek_per_chelovek": 1.827593154
+        },
+        {
+            "Region": "Ленинградская область",
+            "Ipotecs": 33433,
+            "Money": 119043000000,
+            "Dolgi": 2654249,
+            "Dengi_Dengi": 20442,
+            "Ipotek_voluem": 162435.3222,
+            "Ipotek_per_chelovek": 45.61965112
+        },
+        {
+            "Region": "Липецкая область",
+            "Ipotecs": 15177,
+            "Money": 38270000000,
+            "Dolgi": 793895,
+            "Dengi_Dengi": 6334,
+            "Ipotek_voluem": 862150.5328,
+            "Ipotek_per_chelovek": 341.9090315
+        },
+        {
+            "Region": "Магаданская область",
+            "Ipotecs": 5188,
+            "Money": 13492000000,
+            "Dolgi": 252463,
+            "Dengi_Dengi": 1588,
+            "Ipotek_voluem": 4247.372623,
+            "Ipotek_per_chelovek": 1.633217401
+        },
+        {
+            "Region": "Московская область",
+            "Ipotecs": 140030,
+            "Money": 657945000000,
+            "Dolgi": 13737958,
+            "Dengi_Dengi": 189488,
+            "Ipotek_voluem": 1110615.025,
+            "Ipotek_per_chelovek": 236.3714626
+        },
+        {
+            "Region": "Мурманская область",
+            "Ipotecs": 13133,
+            "Money": 39417000000,
+            "Dolgi": 823453,
+            "Dengi_Dengi": 5640,
+            "Ipotek_voluem": 14149.0741,
+            "Ipotek_per_chelovek": 4.714204282
+        },
+        {
+            "Region": "Нижегородская область",
+            "Ipotecs": 43358,
+            "Money": 125854000000,
+            "Dolgi": 2544495,
+            "Dengi_Dengi": 25286,
+            "Ipotek_voluem": 66111.07463,
+            "Ipotek_per_chelovek": 22.77594652
+        },
+        {
+            "Region": "Новгородская область",
+            "Ipotecs": 8407,
+            "Money": 20668000000,
+            "Dolgi": 459855,
+            "Dengi_Dengi": 2982,
+            "Ipotek_voluem": 10637.62439,
+            "Ipotek_per_chelovek": 4.327003497
+        },
+        {
+            "Region": "Новосибирская область",
+            "Ipotecs": 55367,
+            "Money": 189572000000,
+            "Dolgi": 3638991,
+            "Dengi_Dengi": 40480,
+            "Ipotek_voluem": 261591.9171,
+            "Ipotek_per_chelovek": 76.40136556
+        },
+        {
+            "Region": "Омская область",
+            "Ipotecs": 28672,
+            "Money": 78556000000,
+            "Dolgi": 1524807,
+            "Dengi_Dengi": 13148,
+            "Ipotek_voluem": 60853.76226,
+            "Ipotek_per_chelovek": 22.21089505
+        },
+        {
+            "Region": "Оренбургская область",
+            "Ipotecs": 36464,
+            "Money": 80400000000,
+            "Dolgi": 1712183,
+            "Dengi_Dengi": 15182,
+            "Ipotek_voluem": 31171.71934,
+            "Ipotek_per_chelovek": 14.13738276
+        },
+        {
+            "Region": "Орловская область",
+            "Ipotecs": 11450,
+            "Money": 28616000000,
+            "Dolgi": 597326,
+            "Dengi_Dengi": 3654,
+            "Ipotek_voluem": 15238.75253,
+            "Ipotek_per_chelovek": 6.097418103
+        },
+        {
+            "Region": "Пензенская область",
+            "Ipotecs": 24977,
+            "Money": 55555000000,
+            "Dolgi": 1062109,
+            "Dengi_Dengi": 7360,
+            "Ipotek_voluem": 89568.8667,
+            "Ipotek_per_chelovek": 40.2693112
+        },
+        {
+            "Region": "Пермский край",
+            "Ipotecs": 45571,
+            "Money": 121246000000,
+            "Dolgi": 2534784,
+            "Dengi_Dengi": 34772,
+            "Ipotek_voluem": 261775.9901,
+            "Ipotek_per_chelovek": 98.38999756
+        },
+        {
+            "Region": "Приморский край",
+            "Ipotecs": 29460,
+            "Money": 124440000000,
+            "Dolgi": 2037992,
+            "Dengi_Dengi": 14194,
+            "Ipotek_voluem": 563194.149,
+            "Ipotek_per_chelovek": 133.3309196
+        },
+        {
+            "Region": "Псковская область",
+            "Ipotecs": 8118,
+            "Money": 19003000000,
+            "Dolgi": 429550,
+            "Dengi_Dengi": 4094,
+            "Ipotek_voluem": 4734.432777,
+            "Ipotek_per_chelovek": 2.022529353
+        },
+        {
+            "Region": "Республика Адыгея (Адыгея)",
+            "Ipotecs": 4065,
+            "Money": 10380000000,
+            "Dolgi": 242247,
+            "Dengi_Dengi": 5258,
+            "Ipotek_voluem": 10533.46201,
+            "Ipotek_per_chelovek": 4.125098561
+        },
+        {
+            "Region": "Республика Алтай",
+            "Ipotecs": 1777,
+            "Money": 3794000000,
+            "Dolgi": 79754,
+            "Dengi_Dengi": 2404,
+            "Ipotek_voluem": 1210.862786,
+            "Ipotek_per_chelovek": 0.5671331499
+        },
+        {
+            "Region": "Республика Башкортостан",
+            "Ipotecs": 69881,
+            "Money": 200632000000,
+            "Dolgi": 4188332,
+            "Dengi_Dengi": 37896,
+            "Ipotek_voluem": 389150.5225,
+            "Ipotek_per_chelovek": 135.542823
+        },
+        {
+            "Region": "Республика Бурятия",
+            "Ipotecs": 14373,
+            "Money": 34818000000,
+            "Dolgi": 692344,
+            "Dengi_Dengi": 10408,
+            "Ipotek_voluem": 128963.1978,
+            "Ipotek_per_chelovek": 53.23648809
+        },
+        {
+            "Region": "Республика Дагестан",
+            "Ipotecs": 10057,
+            "Money": 34265000000,
+            "Dolgi": 597037,
+            "Dengi_Dengi": 11818,
+            "Ipotek_voluem": 56257.80902,
+            "Ipotek_per_chelovek": 16.51203226
+        },
+        {
+            "Region": "Республика Ингушетия",
+            "Ipotecs": 1771,
+            "Money": 2009000000,
+            "Dolgi": 32345,
+            "Dengi_Dengi": 860,
+            "Ipotek_voluem": 2469.30272,
+            "Ipotek_per_chelovek": 2.176772084
+        },
+        {
+            "Region": "Республика Калмыкия",
+            "Ipotecs": 4195,
+            "Money": 14003000000,
+            "Dolgi": 296747,
+            "Dengi_Dengi": 3040,
+            "Ipotek_voluem": 7363.8841,
+            "Ipotek_per_chelovek": 2.206062544
+        },
+        {
+            "Region": "Республика Карелия",
+            "Ipotecs": 10181,
+            "Money": 26352000000,
+            "Dolgi": 620373,
+            "Dengi_Dengi": 3162,
+            "Ipotek_voluem": 39020.80754,
+            "Ipotek_per_chelovek": 15.07554803
+        },
+        {
+            "Region": "Республика Коми",
+            "Ipotecs": 16141,
+            "Money": 41927000000,
+            "Dolgi": 1021440,
+            "Dengi_Dengi": 6766,
+            "Ipotek_voluem": 53823.98439,
+            "Ipotek_per_chelovek": 20.72108503
+        },
+        {
+            "Region": "Республика Крым",
+            "Ipotecs": 10962,
+            "Money": 31326000000,
+            "Dolgi": 479260,
+            "Dengi_Dengi": 1400,
+            "Ipotek_voluem": 31901.14576,
+            "Ipotek_per_chelovek": 11.16326246
+        },
+        {
+            "Region": "Республика Марий Эл",
+            "Ipotecs": 11319,
+            "Money": 22507000000,
+            "Dolgi": 510686,
+            "Dengi_Dengi": 3444,
+            "Ipotek_voluem": 32473.04133,
+            "Ipotek_per_chelovek": 16.3310239
+        },
+        {
+            "Region": "Республика Мордовия",
+            "Ipotecs": 22693,
+            "Money": 27556000000,
+            "Dolgi": 616895,
+            "Dengi_Dengi": 3066,
+            "Ipotek_voluem": 7076.309924,
+            "Ipotek_per_chelovek": 5.827504032
+        },
+        {
+            "Region": "Республика Саха (Якутия)",
+            "Ipotecs": 18960,
+            "Money": 82769000000,
+            "Dolgi": 1877997,
+            "Dengi_Dengi": 21566,
+            "Ipotek_voluem": 250535.7662,
+            "Ipotek_per_chelovek": 57.3905463
+        },
+        {
+            "Region": "Республика Северная Осетия – Алания",
+            "Ipotecs": 6195,
+            "Money": 16448000000,
+            "Dolgi": 353596,
+            "Dengi_Dengi": 14644,
+            "Ipotek_voluem": 30915.20123,
+            "Ipotek_per_chelovek": 11.64394891
+        },
+        {
+            "Region": "Республика Татарстан (Татарстан)",
+            "Ipotecs": 75417,
+            "Money": 226481000000,
+            "Dolgi": 4376467,
+            "Dengi_Dengi": 35716,
+            "Ipotek_voluem": 54162.80241,
+            "Ipotek_per_chelovek": 18.03593268
+        },
+        {
+            "Region": "Республика Тыва",
+            "Ipotecs": 4080,
+            "Money": 10620000000,
+            "Dolgi": 232969,
+            "Dengi_Dengi": 3370,
+            "Ipotek_voluem": 9669.8678,
+            "Ipotek_per_chelovek": 3.71497746
+        },
+        {
+            "Region": "Республика Хакасия",
+            "Ipotecs": 13995,
+            "Money": 18862000000,
+            "Dolgi": 398230,
+            "Dengi_Dengi": 3912,
+            "Ipotek_voluem": 5980.031476,
+            "Ipotek_per_chelovek": 4.436991862
+        },
+        {
+            "Region": "Ростовская область",
+            "Ipotecs": 61059,
+            "Money": 154265000000,
+            "Dolgi": 3320176,
+            "Dengi_Dengi": 41310,
+            "Ipotek_voluem": 64408.28838,
+            "Ipotek_per_chelovek": 25.49318174
+        },
+        {
+            "Region": "Рязанская область",
+            "Ipotecs": 19169,
+            "Money": 47810000000,
+            "Dolgi": 1097583,
+            "Dengi_Dengi": 8178,
+            "Ipotek_voluem": 98451.26137,
+            "Ipotek_per_chelovek": 39.47316941
+        },
+        {
+            "Region": "Самарская область",
+            "Ipotecs": 45919,
+            "Money": 115621000000,
+            "Dolgi": 2527723,
+            "Dengi_Dengi": 33916,
+            "Ipotek_voluem": 26950.86114,
+            "Ipotek_per_chelovek": 10.70356244
+        },
+        {
+            "Region": "Саратовская область",
+            "Ipotecs": 32671,
+            "Money": 79043000000,
+            "Dolgi": 1675862,
+            "Dengi_Dengi": 20892,
+            "Ipotek_voluem": 85811.18565,
+            "Ipotek_per_chelovek": 35.4685076
+        },
+        {
+            "Region": "Сахалинская область",
+            "Ipotecs": 7248,
+            "Money": 39669000000,
+            "Dolgi": 744282,
+            "Dengi_Dengi": 4432,
+            "Ipotek_voluem": 14204.04498,
+            "Ipotek_per_chelovek": 2.595248633
+        },
+        {
+            "Region": "Свердловская область",
+            "Ipotecs": 87844,
+            "Money": 226743000000,
+            "Dolgi": 4746759,
+            "Dengi_Dengi": 51220,
+            "Ipotek_voluem": 228015.3255,
+            "Ipotek_per_chelovek": 88.33692001
+        },
+        {
+            "Region": "Смоленская область",
+            "Ipotecs": 12976,
+            "Money": 32532000000,
+            "Dolgi": 734571,
+            "Dengi_Dengi": 9898,
+            "Ipotek_voluem": 26117.13534,
+            "Ipotek_per_chelovek": 10.41731059
+        },
+        {
+            "Region": "Ставропольский край",
+            "Ipotecs": 31946,
+            "Money": 81888000000,
+            "Dolgi": 1693367,
+            "Dengi_Dengi": 27418,
+            "Ipotek_voluem": 76506.60211,
+            "Ipotek_per_chelovek": 29.84661869
+        },
+        {
+            "Region": "Тамбовская область",
+            "Ipotecs": 11838,
+            "Money": 29966000000,
+            "Dolgi": 660904,
+            "Dengi_Dengi": 4292,
+            "Ipotek_voluem": 20678.82811,
+            "Ipotek_per_chelovek": 8.169123914
+        },
+        {
+            "Region": "Тверская область",
+            "Ipotecs": 19234,
+            "Money": 51766000000,
+            "Dolgi": 1152083,
+            "Dengi_Dengi": 10080,
+            "Ipotek_voluem": 13701.76649,
+            "Ipotek_per_chelovek": 5.090982048
+        },
+        {
+            "Region": "Томская область",
+            "Ipotecs": 15638,
+            "Money": 42178000000,
+            "Dolgi": 904183,
+            "Dengi_Dengi": 5982,
+            "Ipotek_voluem": 27328.17196,
+            "Ipotek_per_chelovek": 10.13224793
+        },
+        {
+            "Region": "Тульская область",
+            "Ipotecs": 21274,
+            "Money": 62637000000,
+            "Dolgi": 1274050,
+            "Dengi_Dengi": 9044,
+            "Ipotek_voluem": 41943.783,
+            "Ipotek_per_chelovek": 14.24576591
+        },
+        {
+            "Region": "Тюменская область",
+            "Ipotecs": 90641,
+            "Money": 320517000000,
+            "Dolgi": 7246079,
+            "Dengi_Dengi": 62910,
+            "Ipotek_voluem": 263081.344,
+            "Ipotek_per_chelovek": 74.3984129
+        },
+        {
+            "Region": "Удмуртская Республика",
+            "Ipotecs": 33532,
+            "Money": 78565000000,
+            "Dolgi": 1615146,
+            "Dengi_Dengi": 10502,
+            "Ipotek_voluem": 60382.2686,
+            "Ipotek_per_chelovek": 25.77150424
+        },
+        {
+            "Region": "Ульяновская область",
+            "Ipotecs": 19530,
+            "Money": 45848000000,
+            "Dolgi": 988000,
+            "Dengi_Dengi": 7264,
+            "Ipotek_voluem": 27166.70597,
+            "Ipotek_per_chelovek": 11.57227726
+        },
+        {
+            "Region": "Хабаровский край",
+            "Ipotecs": 21101,
+            "Money": 82683000000,
+            "Dolgi": 1579273,
+            "Dengi_Dengi": 13318,
+            "Ipotek_voluem": 24016.13798,
+            "Ipotek_per_chelovek": 6.129005086
+        },
+        {
+            "Region": "Челябинская область",
+            "Ipotecs": 55838,
+            "Money": 134665000000,
+            "Dolgi": 2675036,
+            "Dengi_Dengi": 36848,
+            "Ipotek_voluem": 89897.0088,
+            "Ipotek_per_chelovek": 37.27523244
+        },
+        {
+            "Region": "Чеченская Республика",
+            "Ipotecs": 12892,
+            "Money": 14003000000,
+            "Dolgi": 148865,
+            "Dengi_Dengi": 5730,
+            "Ipotek_voluem": 11593.08703,
+            "Ipotek_per_chelovek": 10.67328987
+        },
+        {
+            "Region": "Чувашская Республика – Чувашия",
+            "Ipotecs": 29809,
+            "Money": 63765000000,
+            "Dolgi": 1391455,
+            "Dengi_Dengi": 9584,
+            "Ipotek_voluem": 1287479.557,
+            "Ipotek_per_chelovek": 601.8737254
+        },
+        {
+            "Region": "Чукотский автономный округ",
+            "Ipotecs": 868,
+            "Money": 4173000000,
+            "Dolgi": 84539,
+            "Dengi_Dengi": 236,
+            "Ipotek_voluem": 7628.745361,
+            "Ipotek_per_chelovek": 1.586808285
+        },
+        {
+            "Region": "Ярославская область",
+            "Ipotecs": 18256,
+            "Money": 43850000000,
+            "Dolgi": 904391,
+            "Dengi_Dengi": 13060,
+            "Ipotek_voluem": 35322.33951,
+            "Ipotek_per_chelovek": 14.70569282
+        }
+    ]
 
 export default function GeneralTable() {
     return (
@@ -1043,17 +761,26 @@ export default function GeneralTable() {
                             pageButtonLimit={5}
                             sortable={true}>
                             <Thead>
-                                <Th column="reg">
+                                <Th column="Region">
                                     <span>Регион</span>
                                 </Th>
-                                <Th column="number">
-                                    <span>Количество кредитов</span>
+                                <Th column="Ipotecs">
+                                    <span>Количество ипотек</span>
                                 </Th>
-                                <Th column="baddebt">
-                                    <span>Количество просроченных ипотек</span>
+                                <Th column="Money">
+                                    <span>Объем ипотек, млн руб</span>
                                 </Th>
-                                <Th column="salary">
-                                    <span>Средняя зарплата по региону</span>
+                                <Th column="Dolgi">
+                                    <span>Задолженность по ипотекам, млн руб</span>
+                                </Th>
+                                <Th column="Dengi_Dengi">
+                                    <span>Просроченная задолженность по ипотеке, млн ру</span>
+                                </Th>
+                                <Th column="Ipotek_voluem">
+                                    <span>Объем ипотек на население</span>
+                                </Th>
+                                <Th column="Ipotek_per_chelovek">
+                                    <span>Количество ипотек на тысячу человек</span>
                                 </Th>
                             </Thead>
                         </Table>

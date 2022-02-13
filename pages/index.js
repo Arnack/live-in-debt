@@ -209,11 +209,13 @@ export default function ChartsPage() {
             <div className="col-12 col-md-6 mb-6">
               <div>
                 <h4>
-                  Панчлайн
+                  Топ 3 банков  исцов
                 </h4>
                 <p>
-                  Объем госпошлины, которую
-                  за день заплатили граждане
+
+                  АО "Банк Русский Стандарт"   <br/>                                                               30
+                  ПАО "Совкомбанк"             <br/>                                                                        22
+                  АО "Тинькофф Банк"<br/>
                 </p>
               </div>
             </div>
@@ -226,61 +228,61 @@ export default function ChartsPage() {
 
 
 
-            <div className="col-12 col-md-12 mb-12">
-              <br/>
-              <br/>
-              <br/>
-              <center>
-                <h3>Россияне продолжают искать новые кредиты</h3>
-                <i>Графики данных поиска</i>
-              </center>
-              <br/>
-              <br/>
-            </div>
+            {/*<div className="col-12 col-md-12 mb-12">*/}
+            {/*  <br/>*/}
+            {/*  <br/>*/}
+            {/*  <br/>*/}
+            {/*  <center>*/}
+            {/*    <h3>Россияне продолжают искать новые кредиты</h3>*/}
+            {/*    <i>Графики данных поиска</i>*/}
+            {/*  </center>*/}
+            {/*  <br/>*/}
+            {/*  <br/>*/}
+            {/*</div>*/}
 
 
-            <center>
-              <h1 style={{marginTop: "2200px"}}>Больше интересных графиков для исследователей и аналитиков</h1>
+          {/*  <center>*/}
+          {/*    <h1 style={{marginTop: "2200px"}}>Больше интересных графиков для исследователей и аналитиков</h1>*/}
 
-            </center>
-
-
+          {/*  </center>*/}
 
 
-            <div className="col-12 col-md-6 mb-6">
-              <BancrouptMap />
-            </div>
-
-            <div className="col-12 col-md-6 mb-6">
-              <MortgageNumByRegions />
-            </div>
 
 
-            <div className="col-12 col-md-6 mb-6">
-              <OutdatedMortMap />
-              {/*<AreaChartExample />*/}
-            </div>
+          {/*  <div className="col-12 col-md-6 mb-6">*/}
+          {/*    <BancrouptMap />*/}
+          {/*  </div>*/}
+
+          {/*  <div className="col-12 col-md-6 mb-6">*/}
+          {/*    <MortgageNumByRegions />*/}
+          {/*  </div>*/}
 
 
-            <div className="col-12 col-md-6 mb-6">
-              <MortgageChart />
-              {/*<RadarChartExample />*/}
-            </div>
-            <div className="col-12 col-md-6 mb-6">
-              <KeyRate />
-              {/*<RadarChartExample />*/}
-            </div>
-            <div className="col-12 col-md-6 mb-6">
-              <BancBtCourt />
-              {/*<RadarChartExample />*/}
-            </div>
-            <div className="col-12 col-md-6 mb-4">
-              <MortgagePercentAmongAllCredits />
-              {/*<PieChartExample />*/}
-            </div>
-            <div className="col-12 col-md-6 mb-4">
-              <SqMeterPrise />
-            </div>
+          {/*  <div className="col-12 col-md-6 mb-6">*/}
+          {/*    <OutdatedMortMap />*/}
+          {/*    /!*<AreaChartExample />*!/*/}
+          {/*  </div>*/}
+
+
+          {/*  <div className="col-12 col-md-6 mb-6">*/}
+          {/*    <MortgageChart />*/}
+          {/*    /!*<RadarChartExample />*!/*/}
+          {/*  </div>*/}
+          {/*  <div className="col-12 col-md-6 mb-6">*/}
+          {/*    <KeyRate />*/}
+          {/*    /!*<RadarChartExample />*!/*/}
+          {/*  </div>*/}
+          {/*  <div className="col-12 col-md-6 mb-6">*/}
+          {/*    <BancBtCourt />*/}
+          {/*    /!*<RadarChartExample />*!/*/}
+          {/*  </div>*/}
+          {/*  <div className="col-12 col-md-6 mb-4">*/}
+          {/*    <MortgagePercentAmongAllCredits />*/}
+          {/*    /!*<PieChartExample />*!/*/}
+          {/*  </div>*/}
+          {/*  <div className="col-12 col-md-6 mb-4">*/}
+          {/*    <SqMeterPrise />*/}
+          {/*  </div>*/}
           </div>
         </div>
 
