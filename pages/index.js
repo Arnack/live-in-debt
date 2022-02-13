@@ -275,7 +275,7 @@ export default function ChartsPage() {
                                 <div className="col-12 col-md-4 mb-4">
                                     <div>
                                         <h4>
-                                            Топ 3 банков исцов
+                                            Топ 3 банков истцов
                                         </h4>
                                         <p>
 
