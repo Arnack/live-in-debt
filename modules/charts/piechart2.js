@@ -3,14 +3,13 @@ import {PieChart, Pie, Tooltip, ResponsiveContainer, Cell} from 'recharts';
 import { Card, CardBody } from 'reactstrap';
 
 const data01 = [
-  { name: 'Удовл. дела %', value: 30.381 },
-  { name: 'Неудовл. дела %', value: 4.709 },
-  { name: 'Удовл. частично дела %', value: 13.565 },
+  { name: 'Банки %', value: 45.7 },
+  { name: 'Другие организации %', value: 54.3 },
 ];
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
-const RadialBarChartExample = () => (
+export const RadialBarChartExample2 = () => (
       // <ResponsiveContainer>
     <div>
         {/*<ResponsiveContainer>*/}
@@ -38,5 +37,3 @@ const RadialBarChartExample = () => (
 
       // </ResponsiveContainer>
 );
-
-export default RadialBarChartExample;

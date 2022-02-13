@@ -27,6 +27,7 @@ import {TotalCredits} from "../components/first/TotoalCredits";
 import {OutdatedDebt} from "../components/first/OutdatedDebt";
 import {IdxMortMap} from "../components/mortIdx/mortIdxMap/IdxMortMap";
 import {MortgageGrow} from "../components/mortgage/mortgageGrows";
+import {RadialBarChartExample2} from "../modules/charts/piechart2";
 
 const ViewHeader = () => (
     <div className="view-header">
@@ -81,7 +82,24 @@ export default function ChartsPage() {
 
                                 <div className="col-12 col-md-12 mb-12">
                                     <br/>
-                                    <br/>
+                                </div>
+                                <div style={{paddingLeft: "40px"}} className="col-12 col-md-12 mb-12">
+                                    <strong>
+                                        В 5 раз за десять лет
+                                    </strong>
+                                    <p>
+                                        выросла средняя сумма кредитов, которая приходится на гражданина России — с 28 тысяч до 176 тысяч
+                                    </p>
+
+
+                                    <strong>Почти 12 000 000 производств</strong>
+                                    <p>находилось в работе ФССП по взысканию кредитов граждан в 2021 году</p>
+
+<strong>25 000 000 000 000 рублей</strong>
+                     <p>составляет объем кредитов россиян. Это больше объема бюджета России</p>
+
+                                </div>
+                                <div className="col-12 col-md-12 mb-12">
                                     <br/>
                                     <br/>
                                 </div>
@@ -246,21 +264,32 @@ export default function ChartsPage() {
                                     <br/>
                                     <br/>
                                 </div>
-                                <div className="col-12 col-md-6 mb-6">
+                                <div className="col-12 col-md-4 mb-4">
 
                                     <PieChartExample/>
                                 </div>
-                                <div className="col-12 col-md-6 mb-6">
+                                <div className="col-12 col-md-4 mb-4">
+
+                                    <RadialBarChartExample2 />
+                                </div>
+                                <div className="col-12 col-md-4 mb-4">
                                     <div>
                                         <h4>
                                             Топ 3 банков исцов
                                         </h4>
                                         <p>
 
-                                            АО "Банк Русский Стандарт" <br/> 30
-                                            ПАО "Совкомбанк" <br/> 22
+                                            АО "Банк Русский Стандарт" <br/>
+                                            ПАО "Совкомбанк" <br/>
                                             АО "Тинькофф Банк"<br/>
                                         </p>
+<p>
+    Сумма госпошлины за 1 день 2123006 руб
+</p>
+<p>
+    Средний размергоспошлины 5485.804 руб руб
+</p>
+
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 mb-6">
@@ -285,8 +314,7 @@ export default function ChartsPage() {
 
 
                                   <center>
-                                    <h1 style={{marginTop: "2200px"}}>Больше интересных графиков для исследователей и аналитиков</h1>
-
+                                    <h3 style={{marginTop: "220px"}}>Больше интересных графиков для исследователей и аналитиков</h3>
                                   </center>
 
 
