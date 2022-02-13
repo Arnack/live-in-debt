@@ -26,6 +26,7 @@ import GeneralTable from "../components/table/generalTable";
 import {TotalCredits} from "../components/first/TotoalCredits";
 import {OutdatedDebt} from "../components/first/OutdatedDebt";
 import {IdxMortMap} from "../components/mortIdx/mortIdxMap/IdxMortMap";
+import {MortgageGrow} from "../components/mortgage/mortgageGrows";
 
 const ViewHeader = () => (
   <div className="view-header">
@@ -175,7 +176,7 @@ export default function ChartsPage() {
               <MortgageToCitisents />
             </div>
             <div className="col-12 col-md-4 mb-4">
-
+              <MortgageGrow />
             </div>
             <div className="col-12 col-md-4 mb-4">
               <SqMeterPrise />
@@ -203,7 +204,7 @@ export default function ChartsPage() {
 
 
 
-          <h1 style={{marginTop: "1200px"}}>Гараж</h1>
+          <h1 style={{marginTop: "2200px", textAlign: "center"}}>Гараж</h1>
             <div className="col-12 col-md-6 mb-6">
               {/*<AreaChartExample />*/}
             </div>

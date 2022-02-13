@@ -10,6 +10,7 @@ export const IndicatorsFSSPAmount = () => {
             <CommonChart
                 label={"Сумма дел о взыскании с физических лиц в пользу кредитных организаций в производстве ФССП"}
                 data={data}
+                type={"column"}
                 categories={categories}
             />
         </>
