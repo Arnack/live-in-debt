@@ -9,15 +9,15 @@ const revenueTableData = [
 
 export default function GeneralTable() {
     return (
-
-                <Card className="mb-4">
-                    <CardBody className="table-responsive">
+        <>
+            <br/>
+            <br/>
+            <br/>
+<Card>
                         <Table
                             className="table"
                             data={revenueTableData}
-                            sortable={true}
-                            itemsPerPage={5}
-                            pageButtonLimit={5}>
+                            sortable={true}>
                             <Thead>
                                 <Th column="date">
                                     <span>Регион</span>
@@ -39,7 +39,11 @@ export default function GeneralTable() {
                                 </Th>
                             </Thead>
                         </Table>
-                    </CardBody>
-                </Card>
+</Card>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            </>
     );
 }
