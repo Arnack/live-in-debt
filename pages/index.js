@@ -117,7 +117,6 @@ export default function ChartsPage() {
                                     <BancBtCourt/>
                                 </div>
                                 <div className="col-12 col-md-4 mb-4">
-                                    <strong>Банкротства</strong>
                                     <p style={{width: "400px", float: "left", marginTop: "40px"}}>
                                         С момента создания процедуры банкротства физических лиц в октябре 2015 года ею
                                         воспользовались более 475 тысяч раз. За шесть лет количество судебных решений о
@@ -313,7 +312,9 @@ export default function ChartsPage() {
 
 
                                   <center>
-                                    <h3 style={{marginTop: "220px"}}>Больше интересных графиков для исследователей и аналитиков</h3>
+                                    <h3 style={{marginTop: "100px"}}>
+                                        Больше интересных графиков для исследователей и аналитиков
+                                    </h3>
                                   </center>
 
 
