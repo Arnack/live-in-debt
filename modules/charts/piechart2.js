@@ -13,7 +13,7 @@ export const RadialBarChartExample2 = () => (
       // <ResponsiveContainer>
     <div>
         {/*<ResponsiveContainer>*/}
-        <strong>Доля банков среди исцтов</strong>
+        <strong>Доля банков среди истцов</strong>
         <PieChart width={800} height={400}>
             <Pie
                 isAnimationActive={false}
