@@ -525,6 +525,11 @@ export const BancrouptMap = () => {
       <RusMap
         mapTitle={"Банкротств по решению суда"}
         data={datas[currentDateIdx]}
+        minVal={500}
+        maxVal={9000}
+        // stopColors={[[40, '#fcdfdf'], [100, '#fccaca'], [500, '#faaeae'],
+        //   [1000, '#fc9898'], [3000, '#f67d7d'], [5000, '#f85d5d'],
+        //   [7000, '#fd3b3b'], [8000, '#f82b2b'], [9000, '#ff0707']]}
       />
       <input
           value={currentDateIdx}

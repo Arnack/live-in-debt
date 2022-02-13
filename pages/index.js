@@ -19,6 +19,8 @@ import { KeyRate } from "../components/keyRate/KeyRate";
 import { BancBtCourt } from "../components/bancrouptByCourt/BancByCourt";
 import { BancrouptMap } from "../components/bancrouptMAP/BancrouptMap";
 import {OutdatedMortMap} from "../components/outdatedMortgMap/OutdatedMortMap";
+import {IndicatorsFSSPNUM} from "../components/fss/indicatorsFCCP/IndicatorsFSSPNUM";
+import {IndicatorsFSSPAmount} from "../components/fss/indicatorsFCCP/IndicatorsFSSPAmount";
 
 const ViewHeader = () => (
   <div className="view-header">
@@ -121,6 +123,14 @@ export default function ChartsPage() {
             </div>
             <div className="col-12 col-md-6 mb-4">
               <SqMeterPrise />
+            </div>
+
+
+            <div className="col-12 col-md-6 mb-4">
+              <IndicatorsFSSPNUM />
+            </div>
+            <div className="col-12 col-md-6 mb-4">
+              <IndicatorsFSSPAmount/>
             </div>
           </div>
         </div>

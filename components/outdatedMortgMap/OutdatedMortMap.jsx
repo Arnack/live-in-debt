@@ -35,8 +35,8 @@ export const OutdatedMortMap = () => {
     <>
       <RusMap
         mapTitle={"Просроченные ипотечные кредиты в 2021 г."}
-        minVal={5000}
-        maxVal={2230393}
+        minVal={9000}
+        maxVal={200393}
         data={datas[currentMIdx]}
       />
       <input
