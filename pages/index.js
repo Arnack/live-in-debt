@@ -303,35 +303,18 @@ export default function ChartsPage() {
 
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-6 mb-6">
 
-                                </div>
-                                <div className="col-12 col-md-6 mb-6">
-
-                                </div>
-
-
-                                {/*<div className="col-12 col-md-12 mb-12">*/}
-                                {/*  <br/>*/}
-                                {/*  <br/>*/}
-                                {/*  <br/>*/}
-                                {/*  <center>*/}
-                                {/*    <h3>Россияне продолжают искать новые кредиты</h3>*/}
-                                {/*    <i>Графики данных поиска</i>*/}
-                                {/*  </center>*/}
-                                {/*  <br/>*/}
-                                {/*  <br/>*/}
-                                {/*</div>*/}
-
-
+                                <div className="col-12 col-md-12 mb-12">
                                 <center>
-                                    <h4 style={{marginTop: "80px", cursor: "pointer", textAlign: 'center',
+                                    <h4 style={{cursor: "pointer", textAlign: 'center',
                                     borderRadius: "4px", border: "1px solid lightgray",
-                                    width: "100%", padding: "4px 16px", background: "#f7f6f6"}}
+                                        margin: "16px auto",
+                                     padding: "4px 16px", background: "#f7f6f6"}}
                                         onClick={() => setIsExtraCollapsed(!isExtraCollapsed)}>
                                         Больше интересных графиков для исследователей и аналитиков
                                     </h4>
                                 </center>
+                                </div>
 
                                 <Collapse isOpen={!isExtraCollapsed}  >
 <div className="row">
