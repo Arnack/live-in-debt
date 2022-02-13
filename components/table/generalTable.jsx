@@ -65,8 +65,8 @@ const revenueTableData =
             "Money": 50144000000,
             "Dolgi": 1011908,
             "Dengi_Dengi": 11872,
-            "Ipotek_voluem": 21748.7101,
-            "Ipotek_per_chelovek": 8.6645258
+            "Ipotek_voluem": 37362.37044,
+            "Ipotek_per_chelovek": 14.88489299
         },
         {
             "Region": "Волгоградская область",
@@ -74,8 +74,8 @@ const revenueTableData =
             "Money": 80109000000,
             "Dolgi": 1656738,
             "Dengi_Dengi": 19282,
-            "Ipotek_voluem": 6330.200197,
-            "Ipotek_per_chelovek": 2.582289284
+            "Ipotek_voluem": 32373.08026,
+            "Ipotek_per_chelovek": 13.20600544
         },
         {
             "Region": "Вологодская область",
@@ -83,8 +83,8 @@ const revenueTableData =
             "Money": 48848000000,
             "Dolgi": 1004303,
             "Dengi_Dengi": 9034,
-            "Ipotek_voluem": 9072.232039,
-            "Ipotek_per_chelovek": 4.004017575
+            "Ipotek_voluem": 42438.06916,
+            "Ipotek_per_chelovek": 18.72998553
         },
         {
             "Region": "Воронежская область",
@@ -92,8 +92,8 @@ const revenueTableData =
             "Money": 92747000000,
             "Dolgi": 1881740,
             "Dengi_Dengi": 30742,
-            "Ipotek_voluem": 181859.7154,
-            "Ipotek_per_chelovek": 75.56981286
+            "Ipotek_voluem": 40226.69942,
+            "Ipotek_per_chelovek": 16.71576435
         },
         {
             "Region": "г. Москва",
@@ -101,8 +101,8 @@ const revenueTableData =
             "Money": 1257689000000,
             "Dolgi": 22866762,
             "Dengi_Dengi": 324006,
-            "Ipotek_voluem": 8036351.438,
-            "Ipotek_per_chelovek": 1208.779553
+            "Ipotek_voluem": 99382.38095,
+            "Ipotek_per_chelovek": 14.94849882
         },
         {
             "Region": "г. Санкт-Петербург",
@@ -110,8 +110,8 @@ const revenueTableData =
             "Money": 530898000000,
             "Dolgi": 10828864,
             "Dengi_Dengi": 84910,
-            "Ipotek_voluem": 503944.527,
-            "Ipotek_per_chelovek": 115.2754904
+            "Ipotek_voluem": 2029.774483,
+            "Ipotek_per_chelovek": 0.5971017443
         },
         {
             "Region": "г. Севастополь",
@@ -119,8 +119,8 @@ const revenueTableData =
             "Money": 10929000000,
             "Dolgi": 174830,
             "Dengi_Dengi": 514,
-            "Ipotek_voluem": 11072.58934,
-            "Ipotek_per_chelovek": 3.257239887
+            "Ipotek_voluem": 1040992.8,
+            "Ipotek_per_chelovek": 238.12
         },
         {
             "Region": "Еврейская автономная область",
@@ -128,8 +128,8 @@ const revenueTableData =
             "Money": 4563000000,
             "Dolgi": 100097,
             "Dengi_Dengi": 1644,
-            "Ipotek_voluem": 1921.24617,
-            "Ipotek_per_chelovek": 0.7107305578
+            "Ipotek_voluem": 29156.54952,
+            "Ipotek_per_chelovek": 10.78594249
         },
         {
             "Region": "Забайкальский край",
@@ -137,8 +137,8 @@ const revenueTableData =
             "Money": 40812000000,
             "Dolgi": 798773,
             "Dengi_Dengi": 10728,
-            "Ipotek_voluem": 46954.00666,
-            "Ipotek_per_chelovek": 14.30410577
+            "Ipotek_voluem": 38739.99155,
+            "Ipotek_per_chelovek": 11.80178171
         },
         {
             "Region": "Ивановская область",
@@ -146,8 +146,8 @@ const revenueTableData =
             "Money": 28745000000,
             "Dolgi": 583041,
             "Dengi_Dengi": 7842,
-            "Ipotek_voluem": 28219.44113,
-            "Ipotek_per_chelovek": 11.58425484
+            "Ipotek_voluem": 29122.66269,
+            "Ipotek_per_chelovek": 11.95503287
         },
         {
             "Region": "Иркутская область",
@@ -155,8 +155,8 @@ const revenueTableData =
             "Money": 98279000000,
             "Dolgi": 2107579,
             "Dengi_Dengi": 31578,
-            "Ipotek_voluem": 98182.78087,
-            "Ipotek_per_chelovek": 37.17057284
+            "Ipotek_voluem": 41380.26569,
+            "Ipotek_per_chelovek": 15.66596674
         },
         {
             "Region": "Кабардино-Балкарская Республика",
@@ -164,8 +164,8 @@ const revenueTableData =
             "Money": 14538000000,
             "Dolgi": 328086,
             "Dengi_Dengi": 5800,
-            "Ipotek_voluem": 46645.93942,
-            "Ipotek_per_chelovek": 18.20532812
+            "Ipotek_voluem": 16725.89799,
+            "Ipotek_per_chelovek": 6.527909286
         },
         {
             "Region": "Калининградская область",
@@ -173,8 +173,8 @@ const revenueTableData =
             "Money": 47735000000,
             "Dolgi": 1003531,
             "Dengi_Dengi": 45368,
-            "Ipotek_voluem": 102577.1612,
-            "Ipotek_per_chelovek": 37.51958174
+            "Ipotek_voluem": 46862.23769,
+            "Ipotek_per_chelovek": 17.14077029
         },
         {
             "Region": "Калужская область",
@@ -182,8 +182,8 @@ const revenueTableData =
             "Money": 54447000000,
             "Dolgi": 1177052,
             "Dengi_Dengi": 14690,
-            "Ipotek_voluem": 43551.57246,
-            "Ipotek_per_chelovek": 14.49719359
+            "Ipotek_voluem": 54393.69418,
+            "Ipotek_per_chelovek": 18.10625587
         },
         {
             "Region": "Камчатский край",
@@ -191,8 +191,8 @@ const revenueTableData =
             "Money": 20875000000,
             "Dolgi": 395543,
             "Dengi_Dengi": 2648,
-            "Ipotek_voluem": 33218.07127,
-            "Ipotek_per_chelovek": 19.23704257
+            "Ipotek_voluem": 66978.53799,
+            "Ipotek_per_chelovek": 38.78819381
         },
         {
             "Region": "Карачаево-Черкесская Республика",
@@ -200,8 +200,8 @@ const revenueTableData =
             "Money": 10795000000,
             "Dolgi": 196520,
             "Dengi_Dengi": 11680,
-            "Ipotek_voluem": 1899.20842,
-            "Ipotek_per_chelovek": 0.7635539177
+            "Ipotek_voluem": 23197.24427,
+            "Ipotek_per_chelovek": 9.326173239
         },
         {
             "Region": "Кемеровская область",
@@ -209,8 +209,8 @@ const revenueTableData =
             "Money": 94941000000,
             "Dolgi": 1936345,
             "Dengi_Dengi": 19014,
-            "Ipotek_voluem": 33243.8227,
-            "Ipotek_per_chelovek": 16.82902652
+            "Ipotek_voluem": 36052.00183,
+            "Ipotek_per_chelovek": 18.25061156
         },
         {
             "Region": "Кировская область",
@@ -218,8 +218,8 @@ const revenueTableData =
             "Money": 46154000000,
             "Dolgi": 1048615,
             "Dengi_Dengi": 8156,
-            "Ipotek_voluem": 56383.69351,
-            "Ipotek_per_chelovek": 33.54752801
+            "Ipotek_voluem": 36918.09054,
+            "Ipotek_per_chelovek": 21.96575994
         },
         {
             "Region": "Костромская область",
@@ -227,8 +227,8 @@ const revenueTableData =
             "Money": 21496000000,
             "Dolgi": 437521,
             "Dengi_Dengi": 2858,
-            "Ipotek_voluem": 19604.40972,
-            "Ipotek_per_chelovek": 8.624809391
+            "Ipotek_voluem": 34206.25916,
+            "Ipotek_per_chelovek": 15.04878084
         },
         {
             "Region": "Краснодарский край",
@@ -236,8 +236,8 @@ const revenueTableData =
             "Money": 229024000000,
             "Dolgi": 4740579,
             "Dengi_Dengi": 68558,
-            "Ipotek_voluem": 121003.1537,
-            "Ipotek_per_chelovek": 41.92663328
+            "Ipotek_voluem": 40293.12729,
+            "Ipotek_per_chelovek": 13.96124911
         },
         {
             "Region": "Красноярский край",
@@ -245,8 +245,8 @@ const revenueTableData =
             "Money": 153841000000,
             "Dolgi": 3202329,
             "Dengi_Dengi": 55108,
-            "Ipotek_voluem": 136360.6549,
-            "Ipotek_per_chelovek": 43.52096097
+            "Ipotek_voluem": 53867.80135,
+            "Ipotek_per_chelovek": 17.19248475
         },
         {
             "Region": "Курганская область",
@@ -254,8 +254,8 @@ const revenueTableData =
             "Money": 29120000000,
             "Dolgi": 594393,
             "Dengi_Dengi": 4826,
-            "Ipotek_voluem": 209445.1717,
-            "Ipotek_per_chelovek": 214.6021836
+            "Ipotek_voluem": 35574.23311,
+            "Ipotek_per_chelovek": 36.45015087
         },
         {
             "Region": "Курская область",
@@ -263,8 +263,8 @@ const revenueTableData =
             "Money": 36755000000,
             "Dolgi": 748402,
             "Dengi_Dengi": 6018,
-            "Ipotek_voluem": 4768.11374,
-            "Ipotek_per_chelovek": 1.827593154
+            "Ipotek_voluem": 33520.65868,
+            "Ipotek_per_chelovek": 12.84829383
         },
         {
             "Region": "Ленинградская область",
@@ -272,8 +272,8 @@ const revenueTableData =
             "Money": 119043000000,
             "Dolgi": 2654249,
             "Dengi_Dengi": 20442,
-            "Ipotek_voluem": 162435.3222,
-            "Ipotek_per_chelovek": 45.61965112
+            "Ipotek_voluem": 62895.49752,
+            "Ipotek_per_chelovek": 17.66408078
         },
         {
             "Region": "Липецкая область",
@@ -281,8 +281,8 @@ const revenueTableData =
             "Money": 38270000000,
             "Dolgi": 793895,
             "Dengi_Dengi": 6334,
-            "Ipotek_voluem": 862150.5328,
-            "Ipotek_per_chelovek": 341.9090315
+            "Ipotek_voluem": 33921.53109,
+            "Ipotek_per_chelovek": 13.45249745
         },
         {
             "Region": "Магаданская область",
@@ -290,8 +290,8 @@ const revenueTableData =
             "Money": 13492000000,
             "Dolgi": 252463,
             "Dengi_Dengi": 1588,
-            "Ipotek_voluem": 4247.372623,
-            "Ipotek_per_chelovek": 1.633217401
+            "Ipotek_voluem": 97041.01155,
+            "Ipotek_per_chelovek": 37.31461369
         },
         {
             "Region": "Московская область",
@@ -299,8 +299,8 @@ const revenueTableData =
             "Money": 657945000000,
             "Dolgi": 13737958,
             "Dengi_Dengi": 189488,
-            "Ipotek_voluem": 1110615.025,
-            "Ipotek_per_chelovek": 236.3714626
+            "Ipotek_voluem": 85353.19263,
+            "Ipotek_per_chelovek": 18.16566364
         },
         {
             "Region": "Мурманская область",
@@ -308,8 +308,8 @@ const revenueTableData =
             "Money": 39417000000,
             "Dolgi": 823453,
             "Dengi_Dengi": 5640,
-            "Ipotek_voluem": 14149.0741,
-            "Ipotek_per_chelovek": 4.714204282
+            "Ipotek_voluem": 53784.87687,
+            "Ipotek_per_chelovek": 17.92010523
         },
         {
             "Region": "Нижегородская область",
@@ -317,8 +317,8 @@ const revenueTableData =
             "Money": 125854000000,
             "Dolgi": 2544495,
             "Dengi_Dengi": 25286,
-            "Ipotek_voluem": 66111.07463,
-            "Ipotek_per_chelovek": 22.77594652
+            "Ipotek_voluem": 2835251.977,
+            "Ipotek_per_chelovek": 976.773525
         },
         {
             "Region": "Новгородская область",
@@ -326,8 +326,8 @@ const revenueTableData =
             "Money": 20668000000,
             "Dolgi": 459855,
             "Dengi_Dengi": 2982,
-            "Ipotek_voluem": 10637.62439,
-            "Ipotek_per_chelovek": 4.327003497
+            "Ipotek_voluem": 6506.425835,
+            "Ipotek_per_chelovek": 2.646580317
         },
         {
             "Region": "Новосибирская область",
@@ -335,8 +335,8 @@ const revenueTableData =
             "Money": 189572000000,
             "Dolgi": 3638991,
             "Dengi_Dengi": 40480,
-            "Ipotek_voluem": 261591.9171,
-            "Ipotek_per_chelovek": 76.40136556
+            "Ipotek_voluem": 319998.6496,
+            "Ipotek_per_chelovek": 93.45982124
         },
         {
             "Region": "Омская область",
@@ -344,8 +344,8 @@ const revenueTableData =
             "Money": 78556000000,
             "Dolgi": 1524807,
             "Dengi_Dengi": 13148,
-            "Ipotek_voluem": 60853.76226,
-            "Ipotek_per_chelovek": 22.21089505
+            "Ipotek_voluem": 28198.35769,
+            "Ipotek_per_chelovek": 10.29206314
         },
         {
             "Region": "Оренбургская область",
@@ -353,8 +353,8 @@ const revenueTableData =
             "Money": 80400000000,
             "Dolgi": 1712183,
             "Dengi_Dengi": 15182,
-            "Ipotek_voluem": 31171.71934,
-            "Ipotek_per_chelovek": 14.13738276
+            "Ipotek_voluem": 42234.09983,
+            "Ipotek_per_chelovek": 19.15453005
         },
         {
             "Region": "Орловская область",
@@ -362,8 +362,8 @@ const revenueTableData =
             "Money": 28616000000,
             "Dolgi": 597326,
             "Dengi_Dengi": 3654,
-            "Ipotek_voluem": 15238.75253,
-            "Ipotek_per_chelovek": 6.097418103
+            "Ipotek_voluem": 14728.38493,
+            "Ipotek_per_chelovek": 5.893206857
         },
         {
             "Region": "Пензенская область",
@@ -371,8 +371,8 @@ const revenueTableData =
             "Money": 55555000000,
             "Dolgi": 1062109,
             "Dengi_Dengi": 7360,
-            "Ipotek_voluem": 89568.8667,
-            "Ipotek_per_chelovek": 40.2693112
+            "Ipotek_voluem": 76660.78826,
+            "Ipotek_per_chelovek": 34.46596181
         },
         {
             "Region": "Пермский край",
@@ -380,8 +380,8 @@ const revenueTableData =
             "Money": 121246000000,
             "Dolgi": 2534784,
             "Dengi_Dengi": 34772,
-            "Ipotek_voluem": 261775.9901,
-            "Ipotek_per_chelovek": 98.38999756
+            "Ipotek_voluem": 93923.7647,
+            "Ipotek_per_chelovek": 35.30178217
         },
         {
             "Region": "Приморский край",
@@ -389,8 +389,8 @@ const revenueTableData =
             "Money": 124440000000,
             "Dolgi": 2037992,
             "Dengi_Dengi": 14194,
-            "Ipotek_voluem": 563194.149,
-            "Ipotek_per_chelovek": 133.3309196
+            "Ipotek_voluem": 48246.37755,
+            "Ipotek_per_chelovek": 11.42187627
         },
         {
             "Region": "Псковская область",
@@ -398,8 +398,8 @@ const revenueTableData =
             "Money": 19003000000,
             "Dolgi": 429550,
             "Dengi_Dengi": 4094,
-            "Ipotek_voluem": 4734.432777,
-            "Ipotek_per_chelovek": 2.022529353
+            "Ipotek_voluem": 10119.58395,
+            "Ipotek_per_chelovek": 4.323042809
         },
         {
             "Region": "Республика Адыгея (Адыгея)",
@@ -407,8 +407,8 @@ const revenueTableData =
             "Money": 10380000000,
             "Dolgi": 242247,
             "Dengi_Dengi": 5258,
-            "Ipotek_voluem": 10533.46201,
-            "Ipotek_per_chelovek": 4.125098561
+            "Ipotek_voluem": 16735.21441,
+            "Ipotek_per_chelovek": 6.553819514
         },
         {
             "Region": "Республика Алтай",
@@ -416,8 +416,8 @@ const revenueTableData =
             "Money": 3794000000,
             "Dolgi": 79754,
             "Dengi_Dengi": 2404,
-            "Ipotek_voluem": 1210.862786,
-            "Ipotek_per_chelovek": 0.5671331499
+            "Ipotek_voluem": 8191.429873,
+            "Ipotek_per_chelovek": 3.836629121
         },
         {
             "Region": "Республика Башкортостан",
@@ -425,8 +425,8 @@ const revenueTableData =
             "Money": 200632000000,
             "Dolgi": 4188332,
             "Dengi_Dengi": 37896,
-            "Ipotek_voluem": 389150.5225,
-            "Ipotek_per_chelovek": 135.542823
+            "Ipotek_voluem": 908026.105,
+            "Ipotek_per_chelovek": 316.2694497
         },
         {
             "Region": "Республика Бурятия",
@@ -434,8 +434,8 @@ const revenueTableData =
             "Money": 34818000000,
             "Dolgi": 692344,
             "Dengi_Dengi": 10408,
-            "Ipotek_voluem": 128963.1978,
-            "Ipotek_per_chelovek": 53.23648809
+            "Ipotek_voluem": 8674.602981,
+            "Ipotek_per_chelovek": 3.580908399
         },
         {
             "Region": "Республика Дагестан",
@@ -443,8 +443,8 @@ const revenueTableData =
             "Money": 34265000000,
             "Dolgi": 597037,
             "Dengi_Dengi": 11818,
-            "Ipotek_voluem": 56257.80902,
-            "Ipotek_per_chelovek": 16.51203226
+            "Ipotek_voluem": 34771.58725,
+            "Ipotek_per_chelovek": 10.20568665
         },
         {
             "Region": "Республика Ингушетия",
@@ -452,8 +452,8 @@ const revenueTableData =
             "Money": 2009000000,
             "Dolgi": 32345,
             "Dengi_Dengi": 860,
-            "Ipotek_voluem": 2469.30272,
-            "Ipotek_per_chelovek": 2.176772084
+            "Ipotek_voluem": 641.1764199,
+            "Ipotek_per_chelovek": 0.5652182378
         },
         {
             "Region": "Республика Калмыкия",
@@ -461,8 +461,8 @@ const revenueTableData =
             "Money": 14003000000,
             "Dolgi": 296747,
             "Dengi_Dengi": 3040,
-            "Ipotek_voluem": 7363.8841,
-            "Ipotek_per_chelovek": 2.206062544
+            "Ipotek_voluem": 27160.54651,
+            "Ipotek_per_chelovek": 8.136720174
         },
         {
             "Region": "Республика Карелия",
@@ -470,8 +470,8 @@ const revenueTableData =
             "Money": 26352000000,
             "Dolgi": 620373,
             "Dengi_Dengi": 3162,
-            "Ipotek_voluem": 39020.80754,
-            "Ipotek_per_chelovek": 15.07554803
+            "Ipotek_voluem": 97605.78405,
+            "Ipotek_per_chelovek": 37.70964205
         },
         {
             "Region": "Республика Коми",
@@ -479,8 +479,8 @@ const revenueTableData =
             "Money": 41927000000,
             "Dolgi": 1021440,
             "Dengi_Dengi": 6766,
-            "Ipotek_voluem": 53823.98439,
-            "Ipotek_per_chelovek": 20.72108503
+            "Ipotek_voluem": 68837.6232,
+            "Ipotek_per_chelovek": 26.50101548
         },
         {
             "Region": "Республика Крым",
@@ -488,8 +488,8 @@ const revenueTableData =
             "Money": 31326000000,
             "Dolgi": 479260,
             "Dengi_Dengi": 1400,
-            "Ipotek_voluem": 31901.14576,
-            "Ipotek_per_chelovek": 11.16326246
+            "Ipotek_voluem": 38503.4231,
+            "Ipotek_per_chelovek": 13.47361693
         },
         {
             "Region": "Республика Марий Эл",
@@ -497,8 +497,8 @@ const revenueTableData =
             "Money": 22507000000,
             "Dolgi": 510686,
             "Dengi_Dengi": 3444,
-            "Ipotek_voluem": 32473.04133,
-            "Ipotek_per_chelovek": 16.3310239
+            "Ipotek_voluem": 11835.9594,
+            "Ipotek_per_chelovek": 5.952424776
         },
         {
             "Region": "Республика Мордовия",
@@ -506,8 +506,8 @@ const revenueTableData =
             "Money": 27556000000,
             "Dolgi": 616895,
             "Dengi_Dengi": 3066,
-            "Ipotek_voluem": 7076.309924,
-            "Ipotek_per_chelovek": 5.827504032
+            "Ipotek_voluem": 40803.63436,
+            "Ipotek_per_chelovek": 33.60273169
         },
         {
             "Region": "Республика Саха (Якутия)",
@@ -515,8 +515,8 @@ const revenueTableData =
             "Money": 82769000000,
             "Dolgi": 1877997,
             "Dengi_Dengi": 21566,
-            "Ipotek_voluem": 250535.7662,
-            "Ipotek_per_chelovek": 57.3905463
+            "Ipotek_voluem": 106255.0949,
+            "Ipotek_per_chelovek": 24.3399896
         },
         {
             "Region": "Республика Северная Осетия – Алания",
@@ -524,8 +524,8 @@ const revenueTableData =
             "Money": 16448000000,
             "Dolgi": 353596,
             "Dengi_Dengi": 14644,
-            "Ipotek_voluem": 30915.20123,
-            "Ipotek_per_chelovek": 11.64394891
+            "Ipotek_voluem": 16749.98549,
+            "Ipotek_per_chelovek": 6.308740278
         },
         {
             "Region": "Республика Татарстан (Татарстан)",
@@ -533,8 +533,8 @@ const revenueTableData =
             "Money": 226481000000,
             "Dolgi": 4376467,
             "Dengi_Dengi": 35716,
-            "Ipotek_voluem": 54162.80241,
-            "Ipotek_per_chelovek": 18.03593268
+            "Ipotek_voluem": 326766.2005,
+            "Ipotek_per_chelovek": 108.8114523
         },
         {
             "Region": "Республика Тыва",
@@ -542,8 +542,8 @@ const revenueTableData =
             "Money": 10620000000,
             "Dolgi": 232969,
             "Dengi_Dengi": 3370,
-            "Ipotek_voluem": 9669.8678,
-            "Ipotek_per_chelovek": 3.71497746
+            "Ipotek_voluem": 2727.188684,
+            "Ipotek_per_chelovek": 1.047733506
         },
         {
             "Region": "Республика Хакасия",
@@ -551,8 +551,8 @@ const revenueTableData =
             "Money": 18862000000,
             "Dolgi": 398230,
             "Dengi_Dengi": 3912,
-            "Ipotek_voluem": 5980.031476,
-            "Ipotek_per_chelovek": 4.436991862
+            "Ipotek_voluem": 57093.9074,
+            "Ipotek_per_chelovek": 42.36185103
         },
         {
             "Region": "Ростовская область",
@@ -560,8 +560,8 @@ const revenueTableData =
             "Money": 154265000000,
             "Dolgi": 3320176,
             "Dengi_Dengi": 41310,
-            "Ipotek_voluem": 64408.28838,
-            "Ipotek_per_chelovek": 25.49318174
+            "Ipotek_voluem": 289952.1837,
+            "Ipotek_per_chelovek": 114.7647904
         },
         {
             "Region": "Рязанская область",
@@ -569,8 +569,8 @@ const revenueTableData =
             "Money": 47810000000,
             "Dolgi": 1097583,
             "Dengi_Dengi": 8178,
-            "Ipotek_voluem": 98451.26137,
-            "Ipotek_per_chelovek": 39.47316941
+            "Ipotek_voluem": 11433.73432,
+            "Ipotek_per_chelovek": 4.584255454
         },
         {
             "Region": "Самарская область",
@@ -578,8 +578,8 @@ const revenueTableData =
             "Money": 115621000000,
             "Dolgi": 2527723,
             "Dengi_Dengi": 33916,
-            "Ipotek_voluem": 26950.86114,
-            "Ipotek_per_chelovek": 10.70356244
+            "Ipotek_voluem": 105276.8159,
+            "Ipotek_per_chelovek": 41.81079656
         },
         {
             "Region": "Саратовская область",
@@ -587,8 +587,8 @@ const revenueTableData =
             "Money": 79043000000,
             "Dolgi": 1675862,
             "Dengi_Dengi": 20892,
-            "Ipotek_voluem": 85811.18565,
-            "Ipotek_per_chelovek": 35.4685076
+            "Ipotek_voluem": 25059.88909,
+            "Ipotek_per_chelovek": 10.35805367
         },
         {
             "Region": "Сахалинская область",
@@ -596,8 +596,8 @@ const revenueTableData =
             "Money": 39669000000,
             "Dolgi": 744282,
             "Dengi_Dengi": 4432,
-            "Ipotek_voluem": 14204.04498,
-            "Ipotek_per_chelovek": 2.595248633
+            "Ipotek_voluem": 16562.48917,
+            "Ipotek_per_chelovek": 3.026164549
         },
         {
             "Region": "Свердловская область",
@@ -605,8 +605,8 @@ const revenueTableData =
             "Money": 226743000000,
             "Dolgi": 4746759,
             "Dengi_Dengi": 51220,
-            "Ipotek_voluem": 228015.3255,
-            "Ipotek_per_chelovek": 88.33692001
+            "Ipotek_voluem": 466913.4984,
+            "Ipotek_per_chelovek": 180.8900356
         },
         {
             "Region": "Смоленская область",
@@ -614,8 +614,8 @@ const revenueTableData =
             "Money": 32532000000,
             "Dolgi": 734571,
             "Dengi_Dengi": 9898,
-            "Ipotek_voluem": 26117.13534,
-            "Ipotek_per_chelovek": 10.41731059
+            "Ipotek_voluem": 7583.098353,
+            "Ipotek_per_chelovek": 3.024661386
         },
         {
             "Region": "Ставропольский край",
@@ -623,8 +623,8 @@ const revenueTableData =
             "Money": 81888000000,
             "Dolgi": 1693367,
             "Dengi_Dengi": 27418,
-            "Ipotek_voluem": 76506.60211,
-            "Ipotek_per_chelovek": 29.84661869
+            "Ipotek_voluem": 88899.79341,
+            "Ipotek_per_chelovek": 34.68142829
         },
         {
             "Region": "Тамбовская область",
@@ -632,8 +632,8 @@ const revenueTableData =
             "Money": 29966000000,
             "Dolgi": 660904,
             "Dengi_Dengi": 4292,
-            "Ipotek_voluem": 20678.82811,
-            "Ipotek_per_chelovek": 8.169123914
+            "Ipotek_voluem": 10729.74897,
+            "Ipotek_per_chelovek": 4.238762874
         },
         {
             "Region": "Тверская область",
@@ -641,8 +641,8 @@ const revenueTableData =
             "Money": 51766000000,
             "Dolgi": 1152083,
             "Dengi_Dengi": 10080,
-            "Ipotek_voluem": 13701.76649,
-            "Ipotek_per_chelovek": 5.090982048
+            "Ipotek_voluem": 52056.47513,
+            "Ipotek_per_chelovek": 19.34192796
         },
         {
             "Region": "Томская область",
@@ -650,8 +650,8 @@ const revenueTableData =
             "Money": 42178000000,
             "Dolgi": 904183,
             "Dengi_Dengi": 5982,
-            "Ipotek_voluem": 27328.17196,
-            "Ipotek_per_chelovek": 10.13224793
+            "Ipotek_voluem": 33861.0763,
+            "Ipotek_per_chelovek": 12.55440066
         },
         {
             "Region": "Тульская область",
@@ -659,8 +659,8 @@ const revenueTableData =
             "Money": 62637000000,
             "Dolgi": 1274050,
             "Dengi_Dengi": 9044,
-            "Ipotek_voluem": 41943.783,
-            "Ipotek_per_chelovek": 14.24576591
+            "Ipotek_voluem": 58520.71166,
+            "Ipotek_per_chelovek": 19.87594585
         },
         {
             "Region": "Тюменская область",
@@ -668,8 +668,8 @@ const revenueTableData =
             "Money": 320517000000,
             "Dolgi": 7246079,
             "Dengi_Dengi": 62910,
-            "Ipotek_voluem": 263081.344,
-            "Ipotek_per_chelovek": 74.3984129
+            "Ipotek_voluem": 221181.2037,
+            "Ipotek_per_chelovek": 62.54921107
         },
         {
             "Region": "Удмуртская Республика",
@@ -677,8 +677,8 @@ const revenueTableData =
             "Money": 78565000000,
             "Dolgi": 1615146,
             "Dengi_Dengi": 10502,
-            "Ipotek_voluem": 60382.2686,
-            "Ipotek_per_chelovek": 25.77150424
+            "Ipotek_voluem": 20795.10266,
+            "Ipotek_per_chelovek": 8.875471043
         },
         {
             "Region": "Ульяновская область",
@@ -686,8 +686,8 @@ const revenueTableData =
             "Money": 45848000000,
             "Dolgi": 988000,
             "Dengi_Dengi": 7264,
-            "Ipotek_voluem": 27166.70597,
-            "Ipotek_per_chelovek": 11.57227726
+            "Ipotek_voluem": 29706.05596,
+            "Ipotek_per_chelovek": 12.65397123
         },
         {
             "Region": "Хабаровский край",
@@ -695,8 +695,8 @@ const revenueTableData =
             "Money": 82683000000,
             "Dolgi": 1579273,
             "Dengi_Dengi": 13318,
-            "Ipotek_voluem": 24016.13798,
-            "Ipotek_per_chelovek": 6.129005086
+            "Ipotek_voluem": 55367.23996,
+            "Ipotek_per_chelovek": 14.12991946
         },
         {
             "Region": "Челябинская область",
@@ -704,8 +704,8 @@ const revenueTableData =
             "Money": 134665000000,
             "Dolgi": 2675036,
             "Dengi_Dengi": 36848,
-            "Ipotek_voluem": 89897.0088,
-            "Ipotek_per_chelovek": 37.27523244
+            "Ipotek_voluem": 110533.4481,
+            "Ipotek_per_chelovek": 45.83200295
         },
         {
             "Region": "Чеченская Республика",
@@ -713,8 +713,8 @@ const revenueTableData =
             "Money": 14003000000,
             "Dolgi": 148865,
             "Dengi_Dengi": 5730,
-            "Ipotek_voluem": 11593.08703,
-            "Ipotek_per_chelovek": 10.67328987
+            "Ipotek_voluem": 10762.20845,
+            "Ipotek_per_chelovek": 9.908333314
         },
         {
             "Region": "Чувашская Республика – Чувашия",
@@ -722,8 +722,8 @@ const revenueTableData =
             "Money": 63765000000,
             "Dolgi": 1391455,
             "Dengi_Dengi": 9584,
-            "Ipotek_voluem": 1287479.557,
-            "Ipotek_per_chelovek": 601.8737254
+            "Ipotek_voluem": 37783.2186,
+            "Ipotek_per_chelovek": 17.66298068
         },
         {
             "Region": "Чукотский автономный округ",
@@ -731,8 +731,8 @@ const revenueTableData =
             "Money": 4173000000,
             "Dolgi": 84539,
             "Dengi_Dengi": 236,
-            "Ipotek_voluem": 7628.745361,
-            "Ipotek_per_chelovek": 1.586808285
+            "Ipotek_voluem": 1212.091286,
+            "Ipotek_per_chelovek": 0.2521196348
         },
         {
             "Region": "Ярославская область",
@@ -740,8 +740,8 @@ const revenueTableData =
             "Money": 43850000000,
             "Dolgi": 904391,
             "Dengi_Dengi": 13060,
-            "Ipotek_voluem": 35322.33951,
-            "Ipotek_per_chelovek": 14.70569282
+            "Ipotek_voluem": 29272.51948,
+            "Ipotek_per_chelovek": 12.18698097
         }
     ]
 
