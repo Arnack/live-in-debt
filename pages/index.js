@@ -23,6 +23,8 @@ import {IndicatorsFSSPNUM} from "../components/fss/indicatorsFCCP/IndicatorsFSSP
 import {IndicatorsFSSPAmount} from "../components/fss/indicatorsFCCP/IndicatorsFSSPAmount";
 import {DebtVolNum} from "../components/debtVlolume/debpVolNumWrapper";
 import GeneralTable from "../components/table/generalTable";
+import {TotalCredits} from "../components/first/TotoalCredits";
+import {OutdatedDebt} from "../components/first/OutdatedDebt";
 
 const ViewHeader = () => (
   <div className="view-header">
@@ -49,24 +51,85 @@ export default function ChartsPage() {
             {/*<h6 className="text-uppercase mb-5">Tiny Charts</h6>*/}
             {/*<TinyCharts />*/}
         <div className="container">
-          <center>
-            <h3>Кредитная яма, в которую мы проваливаемся</h3>
-            <i>Закредитованность россиян выросла в пятнадцать раз</i>
-
-          </center>
-          <br/>
-          <br/>
-          <br/>
           <div className="row">
             <div className="col-12 col-md-12 mb-12">
             {/*  Объём долгов / количество кредитов*/}
-            <DebtVolNum />
 
-              {/*<div className="col-12 col-md-12 mb-12">*/}
-              {/*  <MortgageToCitisents />*/}
-                {/*<RadialBarChartExample />*/}
-              {/*</div>*/}
+
+
+              <center>
+                <h3>Как растёт кредитная задолженность россиян</h3>
+                <i>Закредитованность россиян выросла в пятнадцать раз</i>
+              </center>
+              <br/>
+              <br/>
+              <br/>
             </div>
+
+
+
+            <div className="col-12 col-md-6 mb-6">
+              <TotalCredits />
+            </div>
+
+            <div className="col-12 col-md-6 mb-6">
+              <OutdatedDebt />
+            </div>
+
+            <div className="col-12 col-md-12 mb-12">
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+            </div>
+            <div className="col-12 col-md-12 mb-12">
+              <center>
+                <h3>Банкротства стремительно растут</h3>
+                <i>В некоторых регионов в прошлом году обанкротилось больше граждан чем за предыдущие шесть лет</i>
+              </center>
+              <br/>
+              <br/>
+            </div>
+
+            <div className="col-12 col-md-8 mb-8">
+              <BancBtCourt />
+            </div>
+            <div className="col-12 col-md-4 mb-4">
+              <p style={{width: "400px", float: "left", marginTop: "40px"}}>
+                Описание: общий рост, чемпионы.
+                <br/>
+                В ряде регионов в прошлом году выросло больше, чем за предыдущие шесть
+              </p>
+            </div>
+
+
+
+            <div className="col-12 col-md-12 mb-12">
+            </div>
+            <div className="col-12 col-md-12 mb-12">
+              <br/>
+              <br/>
+              <br/>
+              <center>
+                <h3>ФССП — коллекторы банков на аутсорсе</h3>
+                <i>В прошлом году против россиян велось почти 12 миллионов производств по выбиванию долгов в пользу кредитных организаций</i>
+              </center>
+              <br/>
+              <br/>
+              <br/>
+            </div>
+
+            <div className="col-12 col-md-6 mb-6">
+              <IndicatorsFSSPAmount />
+            </div>
+            <div className="col-12 col-md-6 mb-6">
+              <IndicatorsFSSPNUM />
+            </div>
+
+
+
+
+
 
             <div className="col-12 col-md-12 mb-12">
               <br/>
