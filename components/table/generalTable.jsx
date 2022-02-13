@@ -12,7 +12,6 @@ export default function GeneralTable() {
 
                 <Card className="mb-4">
                     <CardBody className="table-responsive">
-                        <h6 className="mb-4 text-uppercase">Data Table</h6>
                         <Table
                             className="table"
                             data={revenueTableData}
