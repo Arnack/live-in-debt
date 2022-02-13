@@ -1052,12 +1052,6 @@ export default function GeneralTable() {
                                 <Th column="baddebt">
                                     <span>Количество просроченных ипотек</span>
                                 </Th>
-                                <Th column="bold">
-                                    <span>Банкротства</span>
-                                </Th>
-                                <Th column="population">
-                                    <span>Население региона</span>
-                                </Th>
                                 <Th column="salary">
                                     <span>Средняя зарплата по региону</span>
                                 </Th>
